@@ -1,0 +1,55 @@
+﻿@using SGBL.Core.Application.ViewModels.Genero;
+@model SaveGeneroViewModel
+@{
+    bool editMode = Model.Id != 0;
+    ViewData["Title"] = editMode ? "Editar Género" : "Crear Nuevo Género";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+
+            <div class="card border-0 shadow-lg rounded-4">
+                <div class="card-header bg-primary text-white text-center rounded-top-4 py-3">
+                    <h4 class="m-0">
+                        <i class="bi bi-tags-fill me-2"></i>
+                        @(editMode ? $"Editando: {Model.Name}" : "Crear Nuevo Género")
+                    </h4>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <form method="post" asp-controller="Genero" asp-action="@(editMode ? "Edit" : "Create")">
+
+                        <div class="mb-4">
+                            <label asp-for="Name" class="form-label fw-bold">Nombre del género</label>
+                            <input asp-for="Name" class="form-control form-control-lg" placeholder="Escribe el nombre del género..." autofocus />
+                            <span asp-validation-for="Name" class="text-danger mt-1"></span>
+                        </div>
+
+                        <!-- URL Imagen -->
+                        <div class="col-12">
+                            <label asp-for="ImageUrl" class="form-label fw-semibold">URL de la imagen del Genero</label>
+                            <input asp-for="ImageUrl" class="form-control" id="image-url-input" placeholder="https://example.com/autor.jpg" oninput="updatePreview()" />
+                            <span asp-validation-for="ImageUrl" class="text-danger small"></span>
+                        </div>
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="d-flex justify-content-center gap-3 mt-4">
+                            <button type="submit" class="btn btn-success btn-lg px-4 shadow-sm">
+                                <i class="bi bi-save me-2"></i> @(editMode ? "Actualizar" : "Guardar")
+                            </button>
+                            <a asp-controller="Genero" asp-action="Index" class="btn btn-outline-secondary btn-lg px-4 shadow-sm">
+                                <i class="bi bi-arrow-left me-2"></i> Volver
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,262 @@
+﻿@{
+    ViewData["Title"] = "Catálogo por Género";
+}
+
+<!-- Estilos personalizados -->
+<style>
+    body {
+        background: #f5f7fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card-modern {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-modern:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-modern img {
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .card-modern .card-body {
+        padding: 1rem;
+    }
+
+    .card-modern .card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #0d6efd;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    header {
+        background: linear-gradient(135deg, #0d6efd, #6610f2);
+        color: white;
+        padding: 2rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    } 
+
+    header h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+</style>
+
+<!-- Encabezado -->
+<header class="text-white text-center">
+    <div class="container">
+        <h1>Catálogo en Línea</h1>
+    </div>
+</header>
+
+<!-- Sección de Géneros -->
+<section class="container my-5">
+    <h2 class="text-center section-title text-primary">Selecciona un Género</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="fantasia/fantasia.html">
+                    <img src="img/PortadaGenero/fantasia.jpg" class="card-img-top" alt="Fantasía">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Fantasía</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="cienciaficcion/cienciaficcion.html">
+                    <img src="img/PortadaGenero/cienciaficcion.jpg" class="card-img-top" alt="Ciencia Ficción">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ciencia Ficción</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="romance/romance.html">
+                    <img src="img/PortadaGenero/romance.jpg" class="card-img-top" alt="Romance">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Romance</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="misterio/misterio.html">
+                    <img src="img/PortadaGenero/misterio.jpg" class="card-img-top" alt="Misterio">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Misterio</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="terror/terror.html">
+                    <img src="img/PortadaGenero/terror.jpg" class="card-img-top" alt="Terror">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Terror</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="aventura/aventura.html">
+                    <img src="img/PortadaGenero/aventura.jpg" class="card-img-top" alt="Aventura">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Aventura</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="historia/historia.html">
+                    <img src="img/PortadaGenero/historia.jpg" class="card-img-top" alt="Historia">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Historia</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="biografia/biografia.html">
+                    <img src="img/PortadaGenero/biografia.jpg" class="card-img-top" alt="Biografía">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Biografía</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="infantil/infantil.html">
+                    <img src="img/PortadaGenero/infantil.jpg" class="card-img-top" alt="Infantil">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Infantil</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="accion/accion.html">
+                    <img src="img/PortadaGenero/accion.jpg" class="card-img-top" alt="Acción">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Acción</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="drama/drama.html">
+                    <img src="img/PortadaGenero/drama.jpg" class="card-img-top" alt="Drama">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Drama</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="poesia/poesia.html">
+                    <img src="img/PortadaGenero/poesia.jpg" class="card-img-top" alt="Poesía">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Poesía</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="comedia/comedia.html">
+                    <img src="img/PortadaGenero/comedia.jpg" class="card-img-top" alt="Comedia">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Comedia</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="comedia/comedia.html">
+                    <img src="img/PortadaGenero/deportes.jpg" class="card-img-top" alt="Deporte">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Comedia</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="filosofia/filosofia.html">
+                    <img src="img/PortadaGenero/autoayuda.jpg" class="card-img-top" alt="Auto Ayuda">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Filosofía</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="filosofia/filosofia.html">
+                    <img src="img/PortadaGenero/filosofia.jpg" class="card-img-top" alt="Filosofía">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Filosofía</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card card-modern h-100">
+                <a href="filosofia/filosofia.html">
+                    <img src="img/PortadaGenero/cocina.jpg" class="card-img-top" alt="Cocina">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Filosofía</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

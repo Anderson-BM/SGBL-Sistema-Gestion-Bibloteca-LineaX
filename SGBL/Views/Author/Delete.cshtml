@@ -1,0 +1,65 @@
+﻿@using SGBL.Core.Application.ViewModels.Author;
+@model SaveAutorViewModel
+
+@{
+    ViewData["Title"] = "Eliminar autor";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8 col-lg-6">
+
+            <div class="card border-0 shadow-lg rounded-4">
+
+                <!-- Cabecera -->
+                <div class="card-header bg-danger text-white text-center rounded-top-4 p-3">
+                    <h4 class="m-0">⚠️ Confirmar eliminación del autor</h4>
+                </div>
+
+                <!-- Contenido -->
+                <div class="card-body p-4 text-center">
+
+                    <!-- Imagen del autor -->
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <img src="@Model.ImageUrl"
+                             alt="@Model.Name"
+                             class="img-fluid rounded-4 mb-3 shadow-sm"
+                             style="max-height: 250px; object-fit: cover;" />
+                    }
+                    else
+                    {
+                        <div class="bg-light p-5 rounded-4 mb-3 text-muted">
+                            Sin imagen disponible
+                        </div>
+                    }
+
+                    <!-- Nombre del autor -->
+                    <h5 class="fw-bold mb-3">@Model.Name</h5>
+
+                    <!-- Advertencia -->
+                    <p class="text-muted mb-4 fs-5">
+                        ¿Estás seguro de que quieres <span class="text-danger fw-bold">eliminar</span> este autor? Esta acción es <strong>irreversible</strong>.
+                    </p>
+
+                    <!-- Botones -->
+                    <form method="post" asp-controller="Author" asp-action="DeletePost" class="d-flex justify-content-center gap-3">
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <button type="submit" class="btn btn-danger btn-lg px-4 shadow-sm">Eliminar</button>
+                        <a asp-controller="Author" asp-action="Index" class="btn btn-outline-secondary btn-lg px-4 shadow-sm">Volver atrás</a>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

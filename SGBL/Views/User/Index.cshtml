@@ -1,0 +1,53 @@
+﻿@using SGBL.Core.Application.ViewModels.User
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container-fluid vh-100">
+    <div class="row h-100">
+        <!-- Lado izquierdo: Login -->
+        <div class="col-lg-6 d-flex align-items-center justify-content-center bg-white">
+            <div class="card shadow-lg w-75">
+                <div class="card-body p-5">
+                    <h3 class="text-center mb-4">Iniciar sesión</h3>
+
+                    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                    @if (Model.HasError)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <p>@Model.Error</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form method="post" asp-controller="User" asp-action="Index">
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Correo del usuario</label>
+                            <input class="form-control rounded-pill" asp-for="Email" type="email" placeholder="usuario@ejemplo.com">
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Password" class="form-label">Contraseña</label>
+                            <input class="form-control rounded-pill" asp-for="Password" type="password" placeholder="********">
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a asp-controller="User" asp-action="ForgotPassword" class="btn btn-warning rounded-pill">Olvidé mi contraseña</a>
+                            <button type="submit" class="btn btn-primary rounded-pill">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lado derecho: Imagen -->
+        <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center p-4">
+            <div class="rounded-4 overflow-hidden shadow-lg" style="width: 95%; height: 460px;">
+                <img src="https://st4.depositphotos.com/1001877/25967/i/450/depositphotos_259671206-stock-photo-library-background-from-white-bookshelves.jpg"
+                     alt="Imagen de libro moderno"
+                     class="img-fluid w-100 h-100"
+                     style="object-fit: cover;">
+            </div>
+        </div>
+

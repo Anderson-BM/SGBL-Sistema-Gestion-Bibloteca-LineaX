@@ -1,0 +1,158 @@
+﻿@using Microsoft.AspNetCore.Http
+@using SGBL.Core.Application.Dtos.Account
+@using SGBL.Core.Application.Helpers;
+@using SGBL.Core.Application.ViewModels.User
+@inject IHttpContextAccessor httpContextAccessor
+@{
+    var User = httpContextAccessor.HttpContext.Session.Get<AuthenticationResponse>("user");
+    var isAdmi = User != null ? User.Roles.Any(r => r == "Admi") : false;
+     var isBasic = User != null ? User.Roles.Any(r => r == "Basic") : false;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SGBL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SGBL.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary py-3 mb-3 shadow-sm">
+            <div class="container-fluid">
+                <!-- Título izquierda -->
+                <span class="navbar-brand fw-bold text-white">
+                    Sistema Gestión de Biblioteca
+                </span>
+
+                <!-- Links a la derecha -->
+                <div class="collapse navbar-collapse show justify-content-end">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        @if (User != null)
+                        {
+                            if (isBasic)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Reservas</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Ver Catálogo</a>
+                                </li>
+                            }
+
+                            if (isAdmi)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Genero" asp-action="Index">Géneros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Author" asp-action="Index">Autores</a>
+                                </li>
+
+                                   <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
+                                </li>
+                            }
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="LogOut">Cerrar sesión (@(User.UserName))</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="Index">¡Iniciar Seccion!</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="Register">¡Regístrate!</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+
+<footer style="background: linear-gradient(135deg, #0d6efd, #0a58ca); color: white; border-top: 5px solid #084298;">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <!-- Información principal -->
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <h5 class="fw-bold">SGBL - Sistema de Gestión de Bibliotecas</h5>
+                <p class="mb-1">Tu acceso al conocimiento, más fácil que nunca.</p>
+                <p class="mb-0">&copy; 2025 - Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Enlaces útiles -->
+            <div class="col-md-6 text-center text-md-end">
+                <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-white text-decoration-none me-4">
+                    Política de Privacidad
+                </a>
+                <a href="#" class="text-white text-decoration-none me-4">
+                    Términos de uso
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    Contacto
+                </a>
+            </div>
+        </div>
+
+        <!-- Línea separadora -->
+        <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
+
+        <!-- Redes sociales opcionales -->
+        <div class="row">
+            <div class="col text-center">
+                <a href="#" class="text-white text-decoration-none me-3">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none me-3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none me-3">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

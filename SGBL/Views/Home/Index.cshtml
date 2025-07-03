@@ -1,0 +1,97 @@
+﻿@using SGBL.Core.Application.ViewModels.Libro
+@using SGBL.Core.Application.ViewModels.Author
+@model List<LibroViewModel>
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container-fluid py-5">
+
+    <div class="row justify-content-center">
+
+        <!-- Filtros más modernos -->
+        <aside class="col-lg-3 mb-4">
+            <div class="bg-white shadow-lg rounded-4 p-4 border-0">
+                <h5 class="text-center mb-4 text-primary">
+                    <i class="bi bi-sliders me-2"></i>Filtros
+                </h5>
+                <form method="post" asp-controller="Home" asp-action="Index">
+
+                    <!-- Todos -->
+                    <div class="form-check mb-3 d-flex align-items-center">
+                        <i class="bi bi-list-ul me-2 text-muted"></i>
+                        <input class="form-check-input" value="" type="radio" name="AuthorId" id="category-all" checked />
+                        <label class="form-check-label ms-1" for="category-all">Todos los autores</label>
+                    </div>
+
+                    <!-- Autores -->
+                    @foreach (AuthorViewModel Author in ViewBag.Author)
+                    {
+                        <div class="form-check mb-3 d-flex align-items-center">
+                            <i class="bi bi-person-fill me-2 text-muted"></i>
+                            <input class="form-check-input" value="@Author.Id" type="radio" name="AuthorId" id="category-@Author.Id" />
+                            <label class="form-check-label ms-1" for="category-@Author.Id">@Author.Name</label>
+                        </div>
+                    }
+
+                    <!-- Botón filtrar -->
+                    <button type="submit" class="btn btn-primary w-100 mt-4 shadow-sm rounded-pill">
+                        <i class="bi bi-search me-2"></i>Aplicar Filtro
+                    </button>
+                </form>
+            </div>
+        </aside>
+
+        <!-- Libros -->
+        <main class="col-lg-9">
+
+            <div class="row g-4 justify-content-center">
+                @if (Model == null || !Model.Any())
+                {
+                    <div class="col-12 text-center mt-5">
+                        <h2 class="text-muted">No hay libros disponibles</h2>
+                    </div>
+                }
+                else
+                {
+                    @foreach (LibroViewModel item in Model)
+                    {
+                        <div class="col-12 col-md-6 col-lg-4 d-flex">
+                            <div class="card shadow-lg border-0 rounded-4 w-100 overflow-hidden d-flex flex-column">
+
+                                <!-- Imagen -->
+                                <img src="@item.ImageUrl"
+                                     class="card-img-top img-fluid"
+                                     style="height: 320px; object-fit: cover;"
+                                     alt="@item.Name" />
+
+                                <!-- Contenido -->
+                                <div class="card-body p-4 bg-light d-flex flex-column flex-grow-1 justify-content-between">
+                                    <div>
+                                        <h5 class="fw-bold mb-2">@item.Name</h5>
+                                        <p class="text-muted mb-1"><i class="bi bi-person-fill me-1"></i>@item.Descrition</p>
+                                        <p class="text-muted mb-1"><i class="bi bi-person-fill me-1"></i>@item.AuthorName</p>
+                                        <p class="text-muted"><i class="bi bi-tags-fill me-1"></i>@item.GeneroName</p>
+                                    </div>
+
+                                    <!-- Acciones -->
+                                    <div class="mt-3 d-flex justify-content-between gap-2">
+                                        <button class="btn btn-success btn-sm w-50 rounded-pill shadow-sm">
+                                            <i class="bi bi-box-arrow-in-right me-1"></i> Préstamo
+                                        </button>
+                                        <button class="btn btn-warning btn-sm w-50 rounded-pill shadow-sm">
+                                            <i class="bi bi-bookmark-plus me-1"></i> Reserva
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+
+        </main>
+    </div>
+</div>

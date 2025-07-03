@@ -1,0 +1,123 @@
+﻿@using SGBL.Core.Application.ViewModels.Libro;
+@model SaveLibroViewModel
+
+@{
+    bool editMode = Model.Id != 0;
+    ViewData["Title"] = editMode ? $"Editando el libro: {Model.Name}" : "Creando un nuevo libro";
+}
+
+<div class="container mt-4">
+
+    <!-- Título -->
+    <h1 class="text-center text-primary fw-bold mb-4" style="font-size:2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">
+        @(editMode ? $"Editando el libro: {Model.Name}" : "Creando un nuevo libro")
+    </h1>
+
+    <div class="row g-4 align-items-center">
+
+        <!-- Columna izquierda: Previsualización -->
+        <div class="col-md-6 d-flex flex-column align-items-center">
+            <img id="previewImage"
+                 src="@Model.ImageUrl"
+                 class="img-fluid rounded-4 shadow-lg"
+                 style="max-height: 400px; object-fit: cover;" />
+        </div>
+
+        <!-- Columna derecha: Formulario -->
+        <div class="col-md-6">
+
+            <div class="card shadow-lg border-0 rounded-4 p-4">
+
+                @if (Model.Genero == null || Model.Genero.Count == 0)
+                {
+                    <h4 class="text-center text-danger mb-3">No hay categorías creadas</h4>
+                    <a asp-controller="Libro" asp-action="Index" class="btn btn-warning w-100">Volver atrás</a>
+                }
+                else
+                {
+                    <form method="post" asp-controller="Libro" asp-action="@(editMode ? "Edit" : "Create")">
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Nombre:</label>
+                            <input asp-for="Name" class="form-control" placeholder="Ingrese el nombre del libro" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Descrition" class="form-label">Descripción:</label>
+                            <textarea asp-for="Descrition" class="form-control" placeholder="Ingrese la descripción"></textarea>
+                            <span asp-validation-for="Descrition" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ImageUrl" class="form-label">URL de la imagen:</label>
+                            <input asp-for="ImageUrl" class="form-control" id="imageInput" placeholder="https://..." />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="AuthorId" class="form-label">Autor:</label>
+                            <select asp-for="AuthorId" asp-items="@(new SelectList(Model.Author, "Id", "Name"))" class="form-select">
+                                <option value="">Seleccione un autor</option>
+                            </select>
+                            <span asp-validation-for="AuthorId" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="GeneroId" class="form-label">Género:</label>
+                            <select asp-for="GeneroId" asp-items="@(new SelectList(Model.Genero, "Id", "Name"))" class="form-select">
+                                <option value="">Seleccione un género</option>
+                            </select>
+                            <span asp-validation-for="GeneroId" class="text-danger"></span>
+                        </div>
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mt-3 shadow-sm">
+                            @(editMode ? "Actualizar Libro" : "Guardar Libro")
+                        </button>
+                        <a asp-controller="Libro" asp-action="Index" class="btn btn-secondary btn-lg w-100 mt-2 shadow-sm">Volver atrás</a>
+
+                    </form>
+                }
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const previewImage = document.getElementById('previewImage');
+
+        imageInput.addEventListener('input', () => {
+            let url = imageInput.value.trim();
+
+            // Detectar enlace de Drive tipo "file/d/ID"
+            const driveMatch = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)\//);
+            if (driveMatch && driveMatch[1]) {
+                // Convertir a enlace directo
+                url = `https://drive.google.com/uc?id=${driveMatch[1]}`;
+                imageInput.value = url; // Actualiza el valor en el input
+            }
+
+            previewImage.src = url;
+        });
+    </script>
+}
+
+
+
+@* @section Scripts {
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const previewImage = document.getElementById('previewImage');
+
+        imageInput.addEventListener('input', () => {
+            previewImage.src = imageInput.value;
+        });
+    </script>
+} *@

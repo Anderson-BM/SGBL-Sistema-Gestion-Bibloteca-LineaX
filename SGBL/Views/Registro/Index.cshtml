@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Crear Cuenta";
+}
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow p-4">
+                <h2 class="text-center mb-4 text-primary">Crear una nueva cuenta</h2>
+
+                <!-- Formulario de registro -->
+                <form asp-action="Registrar" asp-controller="Cuenta" method="post">
+                    <div class="mb-3">
+                        <label for="register-name" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="register-name" name="NombreCompleto" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="register-email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="register-email" name="Correo" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="register-password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="register-password" name="Password" required>
+                        <small class="text-muted">Mínimo 8 caracteres, incluyendo mayúsculas y números</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="register-confirm-password" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="register-confirm-password" name="ConfirmPassword" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="register-library-card" class="form-label">Número de Carnet de Biblioteca (opcional)</label>
+                        <input type="text" class="form-control" id="register-library-card" name="Carnet">
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            Acepto los <a href="#">Términos y Condiciones</a> y la <a href="#">Política de Privacidad</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+                </form>
+
+                <div class="text-center mt-4">
+                    <p class="mb-0">¿Ya tienes una cuenta? <a href="../Iniciar/Iniciar.html">Inicia sesión aquí</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

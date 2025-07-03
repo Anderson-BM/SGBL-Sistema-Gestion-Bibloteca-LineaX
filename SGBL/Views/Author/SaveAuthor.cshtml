@@ -1,0 +1,85 @@
+﻿@using SGBL.Core.Application.ViewModels.Author;
+@model SaveAutorViewModel
+
+@{
+    bool editMode = Model.Id != 0;
+    ViewData["Title"] = editMode ? "Editar autor" : "Crear autor";
+}
+
+<div class="container my-5">
+
+    <!-- Encabezado principal -->
+    <h1 class="text-center display-5 mb-5 fw-bold text-primary">Creación de Autores</h1>
+
+    <!-- Contenedor central -->
+    <div class="row justify-content-center">
+
+        <!-- Tarjeta dividida en dos columnas -->
+        <div class="col-12 col-lg-8">
+            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+
+                <div class="row g-0">
+
+                    <!-- Columna izquierda con imagen ilustrativa -->
+                    <div class="col-md-5">
+                        <img src="https://picsum.photos/500/800?grayscale" alt="Imagen autor"
+                             class="img-fluid h-100 w-100" style="object-fit: cover;" />
+                    </div>
+
+                    <!-- Columna derecha con el formulario -->
+                    <div class="col-md-7 p-4">
+
+                        <h4 class="text-center mb-4 text-dark fw-bold">
+                            @(editMode ? $"Editando: {Model.Name}" : "Nuevo autor")
+                        </h4>
+
+                        <form method="post" asp-controller="Author" asp-action="@(editMode ? "Edit":"Create")" class="row g-3">
+
+                            <!-- Nombre -->
+                            <div class="col-12">
+                                <label asp-for="Name" class="form-label fw-semibold">Nombre</label>
+                                <input asp-for="Name" class="form-control" placeholder="Ingrese el nombre del autor" />
+                                <span asp-validation-for="Name" class="text-danger small"></span>
+                            </div>
+
+                            <!-- URL Imagen -->
+                            <div class="col-12">
+                                <label asp-for="ImageUrl" class="form-label fw-semibold">URL de la imagen del autor</label>
+                                <input asp-for="ImageUrl" class="form-control" id="image-url-input" placeholder="https://example.com/autor.jpg" oninput="updatePreview()" />
+                                <span asp-validation-for="ImageUrl" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Previsualización de la imagen -->
+                            <div class="col-12 text-center mt-3">
+                                <img id="image-preview" src="@Model.ImageUrl" alt="Previsualización"
+                                     class="img-thumbnail rounded shadow-sm"
+                                     style="max-height: 180px; width: auto;" />
+                            </div>
+
+                            <!-- Botones -->
+                            <div class="col-12 d-flex justify-content-between mt-4">
+                                <input type="hidden" asp-for="Id" />
+                                <button type="submit" class="btn btn-success px-4 shadow-sm">Guardar</button>
+                                <a asp-controller="Author" asp-action="Index" class="btn btn-outline-secondary px-4">Volver atrás</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function updatePreview() {
+            const url = document.getElementById('image-url-input').value;
+            document.getElementById('image-preview').src = url || '';
+        }
+    </script>
+}

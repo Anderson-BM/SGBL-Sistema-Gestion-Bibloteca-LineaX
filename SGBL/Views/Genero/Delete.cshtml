@@ -1,0 +1,46 @@
+﻿@using SGBL.Core.Application.ViewModels.Genero;
+@model SaveGeneroViewModel
+
+@{
+    ViewData["Title"] = "Eliminar Género";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+
+            <div class="card border-0 shadow-lg rounded-4">
+                <div class="card-header bg-danger text-white text-center rounded-top-4 py-3">
+                    <h4 class="mb-0">
+                        <i class="bi bi-exclamation-triangle-fill me-2"></i> ¡Advertencia!
+                    </h4>
+                </div>
+
+                <div class="card-body text-center p-4">
+
+                    <!-- Mensaje -->
+                    <h5 class="fw-bold mb-3">¿Estás seguro que deseas eliminar el género:</h5>
+                    <h3 class="text-danger mb-4">“@Model.Name”?</h3>
+                    <i class="bi bi-trash3 fs-1 text-danger mb-3"></i>
+                    <p class="text-muted">Esta acción es irreversible y eliminará todos los datos asociados a este género.</p>
+
+                    <!-- Formulario -->
+                    <form method="post" asp-controller="Genero" asp-action="DeletePost" class="mt-4">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="d-flex justify-content-center gap-3">
+                            <button type="submit" class="btn btn-danger btn-lg px-4 shadow-sm">
+                                <i class="bi bi-trash3 me-1"></i> Eliminar
+                            </button>
+                            <a asp-controller="Genero" asp-action="Index" class="btn btn-secondary btn-lg px-4 shadow-sm">
+                                <i class="bi bi-arrow-left me-1"></i> Cancelar
+                            </a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

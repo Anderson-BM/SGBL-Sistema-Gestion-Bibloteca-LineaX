@@ -1,0 +1,49 @@
+﻿@using SGBL.Core.Application.ViewModels.Author;
+@model List<AuthorViewModel>
+@{
+    ViewData["Title"] = "Autores";
+}
+
+<div class="container-fluid mt-4">
+
+    <div class="row mb-4">
+        <div class="col text-end">
+            <a asp-controller="Author" asp-action="Create" class="btn btn-success btn-lg shadow">+ Crear nuevo autor</a>
+        </div>
+    </div>
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <h2 class="text-center text-muted">No hay Autores registrados</h2>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (AuthorViewModel item in Model)
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card shadow-lg border-0 rounded-4 overflow-hidden h-100">
+
+                        <!-- Imagen del autor -->
+                        <img src="@item.ImageUrl" alt="@item.Name"
+                             class="card-img-top img-fluid"
+                             style="height: 250px; object-fit: cover;" />
+
+                        <div class="card-body text-center bg-light">
+                            <h5 class="card-title fw-bold mb-2">@item.Name</h5>
+                            <span class="badge bg-primary mb-3">Libros: @item.LibrosQuantity</span>
+
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <a asp-controller="Author" asp-action="Edit" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-info">Editar</a>
+                                <a asp-controller="Author" asp-action="Delete" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-danger">Borrar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
