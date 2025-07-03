@@ -1,0 +1,12 @@
+# Ignorar archivos y carpetas generadas por Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.dbmdl
+*.pdb
+*.exe
+*.dll
