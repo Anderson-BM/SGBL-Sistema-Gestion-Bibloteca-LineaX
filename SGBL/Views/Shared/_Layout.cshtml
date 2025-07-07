@@ -23,70 +23,381 @@
 
 </head>
 <body>
+    <style>
+        .navbar-library {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #2563eb;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white !important;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+            .navbar-brand i {
+                margin-right: 0.5rem;
+                color: #ffd700;
+            }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 0.75rem 1rem !important;
+            border-radius: 8px;
+            margin: 0 0.2rem;
+            transition: all 0.3s ease;
+        }
+
+            .nav-link:hover {
+                background: rgba(255,255,255,0.2);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+
+            .nav-link i {
+                margin-right: 0.5rem;
+                width: 20px;
+                text-align: center;
+            }
+
+        .user-dropdown {
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            padding: 0.5rem 1rem;
+            backdrop-filter: blur(10px);
+        }
+
+            .user-dropdown:hover {
+                background: rgba(255,255,255,0.25);
+            }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.5rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn-auth {
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            border: none;
+            color: #333;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            margin: 0 0.3rem;
+            transition: all 0.3s ease;
+        }
+
+            .btn-auth:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(255,215,0,0.4);
+                color: #333;
+            }
+/*         media (max-width: 992px) {
+            .navbar-nav
+
+        {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        } */
+    </style>
+
+
+
+
+    <style>
+        .footer-library {
+            background: linear-gradient(135deg, #4a6fa5 0%, #5a7fb8 100%);
+            color: white;
+            border-top: 4px solid #7fb3d3;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .footer-library::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="circuit" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="0.5" fill="rgba(255,255,255,0.1)"/><line x1="2" y1="2" x2="18" y2="2" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/><line x1="2" y1="2" x2="2" y2="18" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="20" fill="url(%23circuit)"/></svg>') repeat;
+                opacity: 0.3;
+            }
+
+        .footer-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-subtitle {
+            font-size: 1rem;
+            color: white;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-copyright {
+            font-size: 0.9rem;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .footer-link {
+            color: white !important;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            margin: 0 0.2rem;
+        }
+
+            .footer-link:hover {
+                color: white !important;
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
+            }
+
+        .footer-divider {
+            border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+            margin: 2rem 0 1.5rem 0;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            color: white !important;
+            font-size: 1.1rem;
+            margin: 0 0.5rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+            .social-icon:hover {
+                background: rgba(255, 255, 255, 0.2);
+                border-color: white;
+                color: white !important;
+                transform: translateY(-3px) scale(1.05);
+                box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+            }
+
+        .tech-icon {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .pulse-effect {
+            animation: pulse 2s infinite;
+        }
+
+      /*   keyframes pulse {
+            0%
+
+        {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.7;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+        } */
+
+        .footer-stats {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: white;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+       /*  media (max-width: 768px) {
+            .footer-title
+
+        {
+            font-size: 1.2rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            margin: 0 0.3rem;
+        }
+
+        } */
+    </style>
+
+
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary py-3 mb-3 shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-library">
             <div class="container-fluid">
                 <!-- Título izquierda -->
-                <span class="navbar-brand fw-bold text-white">
+                <span class="navbar-brand">
+                    <i class="fas fa-book-open"></i>
                     Sistema Gestión de Biblioteca
                 </span>
 
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <!-- Links a la derecha -->
-                <div class="collapse navbar-collapse show justify-content-end">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
                         @if (User != null)
                         {
                             if (isBasic)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                        <i class="fas fa-home"></i>Inicio
+                                    </a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Reservas</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="DashboardUser">
+                                        <i class="fas fa-tachometer-alt"></i>Dashboard
+                                    </a>
                                 </li>
-
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Ver Catálogo</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                        <i class="fas fa-calendar-check"></i>Reservas
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                                        <i class="fas fa-book"></i>Ver Catálogo
+                                    </a>
                                 </li>
                             }
 
                             if (isAdmi)
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Genero" asp-action="Index">Géneros</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                        <i class="fas fa-home"></i>Inicio
+                                    </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Author" asp-action="Index">Autores</a>
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">
+                                        <i class="fas fa-chart-line"></i>Dashboard
+                                    </a>
                                 </li>
-
-                                   <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">
+                                        <i class="fas fa-book"></i>Libros
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Genero" asp-action="Index">
+                                        <i class="fas fa-tags"></i>Géneros
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Author" asp-action="Index">
+                                        <i class="fas fa-user-edit"></i>Autores
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                                        <i class="fas fa-list"></i>Catálogo
+                                    </a>
                                 </li>
                             }
 
-                            <li class="nav-item">
-                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="LogOut">Cerrar sesión (@(User.UserName))</a>
+                            <!-- Usuario logueado con dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link user-dropdown d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
+                                    <div class="user-avatar">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <span>@(User.UserName)</span>
+                                    <i class="fas fa-chevron-down ms-2"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle me-2"></i>Mi Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Configuración</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="LogOut"><i class="fas fa-sign-out-alt me-2"></i>Cerrar sesión</a></li>
+                                </ul>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="Index">¡Iniciar Seccion!</a>
+                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Index">
+                                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white fw-bold" asp-area="" asp-controller="User" asp-action="Register">¡Regístrate!</a>
+                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Register">
+                                    <i class="fas fa-user-plus"></i> Regístrate
+                                </a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link text-white fw-bold" asp-area="" asp-controller="Catalogo" asp-action="Index">Catálogo</a>
+                                <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                                    <i class="fas fa-book"></i>Catálogo
+                                </a>
                             </li>
                         }
                     </ul>
@@ -94,7 +405,6 @@
             </div>
         </nav>
     </header>
-
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -109,47 +419,85 @@
 </body>
 
 
-<footer style="background: linear-gradient(135deg, #0d6efd, #0a58ca); color: white; border-top: 5px solid #084298;">
-    <div class="container py-5">
+<footer class="footer-library">
+    <div class="container py-5 footer-content">
+        <!-- Estadísticas destacadas -->
+        <div class="row footer-stats">
+            <div class="col-4 stat-item">
+                <span class="stat-number pulse-effect">15,000+</span>
+                <span class="stat-label">Libros</span>
+            </div>
+            <div class="col-4 stat-item">
+                <span class="stat-number pulse-effect">2,500+</span>
+                <span class="stat-label">Usuarios</span>
+            </div>
+            <div class="col-4 stat-item">
+                <span class="stat-number pulse-effect">24/7</span>
+                <span class="stat-label">Acceso</span>
+            </div>
+        </div>
+
         <div class="row align-items-center">
             <!-- Información principal -->
             <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                <h5 class="fw-bold">SGBL - Sistema de Gestión de Bibliotecas</h5>
-                <p class="mb-1">Tu acceso al conocimiento, más fácil que nunca.</p>
-                <p class="mb-0">&copy; 2025 - Todos los derechos reservados.</p>
+                <h5 class="footer-title">
+                    <i class="fas fa-microchip tech-icon"></i>
+                    SGBL - Sistema de Gestión de Bibliotecas
+                </h5>
+                <p class="footer-subtitle">
+                    <i class="fas fa-rocket tech-icon"></i>
+                    Tu acceso al conocimiento, más fácil que nunca.
+                </p>
+                <p class="footer-copyright">
+                    <i class="fas fa-code tech-icon"></i>
+                    &copy; 2025 - Todos los derechos reservados.
+                </p>
             </div>
 
             <!-- Enlaces útiles -->
             <div class="col-md-6 text-center text-md-end">
-                <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-white text-decoration-none me-4">
-                    Política de Privacidad
-                </a>
-                <a href="#" class="text-white text-decoration-none me-4">
-                    Términos de uso
-                </a>
-                <a href="#" class="text-white text-decoration-none">
-                    Contacto
-                </a>
+                <div class="mb-3">
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy" class="footer-link">
+                        <i class="fas fa-shield-alt me-2"></i>Política de Privacidad
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-file-contract me-2"></i>Términos de uso
+                    </a>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-envelope me-2"></i>Contacto
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- Línea separadora -->
-        <hr class="my-4" style="border-top: 1px solid rgba(255, 255, 255, 0.3);">
+        <hr class="footer-divider">
 
-        <!-- Redes sociales opcionales -->
-        <div class="row">
-            <div class="col text-center">
-                <a href="#" class="text-white text-decoration-none me-3">
+        <!-- Redes sociales y información técnica -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <small class="text-muted">
+                    <i class="fas fa-server tech-icon"></i>
+                    Desarrollado con ASP.NET Core |
+                    <i class="fas fa-database tech-icon"></i>
+                    Powered by Modern Technology
+                </small>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="social-icon">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="text-white text-decoration-none me-3">
+                <a href="#" class="social-icon">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="text-white text-decoration-none me-3">
+                <a href="#" class="social-icon">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="text-white text-decoration-none">
+                <a href="#" class="social-icon">
                     <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>

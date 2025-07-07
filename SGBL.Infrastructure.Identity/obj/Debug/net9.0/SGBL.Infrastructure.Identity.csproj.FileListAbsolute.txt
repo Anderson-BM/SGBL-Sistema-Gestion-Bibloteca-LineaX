@@ -17,3 +17,4 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Identity\obj\De
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Identity\obj\Debug\net9.0\refint\SGBL.Infrastructure.Identity.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Identity\obj\Debug\net9.0\SGBL.Infrastructure.Identity.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Identity\obj\Debug\net9.0\ref\SGBL.Infrastructure.Identity.dll
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Identity\obj\Debug\net9.0\SGBL.Infrastructure.Identity.sourcelink.json

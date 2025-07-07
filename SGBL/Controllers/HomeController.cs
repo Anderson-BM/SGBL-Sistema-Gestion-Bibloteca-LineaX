@@ -36,6 +36,64 @@ namespace SGBL.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Dashboard()
+        {
+            try
+            {
+                // Obtener datos reales del sistema
+                var libros = await _libroService.GetAllViewModel();
+                var autores = await _authorService.GetAllViewModel();
+                var generos = await _generoService.GetAllViewModel();
+
+                // Pasar los datos a la vista
+                ViewBag.TotalBooks = libros?.Count ?? 0;
+                ViewBag.TotalAuthors = autores?.Count ?? 0;
+                ViewBag.TotalGenres = generos?.Count ?? 0;
+
+                return View();
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, mostrar valores por defecto
+                ViewBag.TotalBooks = 0;
+                ViewBag.TotalAuthors = 0;
+                ViewBag.TotalGenres = 0;
+
+                return View();
+            }
+        }
+
+
+
+
+
+        public async Task<IActionResult> DashboardUser()
+        {
+            try
+            {
+                // Obtener datos reales del sistema
+                var libros = await _libroService.GetAllViewModel();
+                var autores = await _authorService.GetAllViewModel();
+                var generos = await _generoService.GetAllViewModel();
+
+                // Pasar los datos a la vista
+                ViewBag.TotalBooks = libros?.Count ?? 0;
+                ViewBag.TotalAuthors = autores?.Count ?? 0;
+                ViewBag.TotalGenres = generos?.Count ?? 0;
+
+                return View();
+            }
+            catch (Exception ex)
+            {
+                // En caso de error, mostrar valores por defecto
+                ViewBag.TotalBooks = 0;
+                ViewBag.TotalAuthors = 0;
+                ViewBag.TotalGenres = 0;
+
+                return View();
+            }
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

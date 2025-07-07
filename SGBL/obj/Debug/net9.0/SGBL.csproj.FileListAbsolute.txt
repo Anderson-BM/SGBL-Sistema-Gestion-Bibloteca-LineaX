@@ -660,3 +660,4 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\refint\SGBL.d
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\ref\SGBL.dll
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.sourcelink.json

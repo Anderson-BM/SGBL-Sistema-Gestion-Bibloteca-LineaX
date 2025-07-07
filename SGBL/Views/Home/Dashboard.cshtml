@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard - Librería Digital</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+        // Fallback: cargar Chart.js desde otro CDN si el primero falla
+        if (typeof Chart === 'undefined') {
+            console.log('Intentando cargar Chart.js desde CDN alternativo...');
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js';
+            script.onload = function() {
+                console.log('Chart.js cargado desde CDN alternativo');
+            };
+            script.onerror = function() {
+                console.error('Error al cargar Chart.js desde ambos CDNs');
+            };
+            document.head.appendChild(script);
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f9fc;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header con efecto cristal templado */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px rgba(0, 123, 255, 0.1);
+            margin-bottom: 40px;
+            padding: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .glass-header::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(0, 86, 179, 0.05) 100%);
+                pointer-events: none;
+            }
+
+            .glass-header .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+                position: relative;
+                z-index: 1;
+            }
+
+        .glass-title {
+            font-size: 38px;
+            color: #0a2a63;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+            .glass-title i {
+                color: #007bff;
+                text-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+            }
+
+        .glass-subtitle {
+            font-size: 16px;
+            color: #5a6c7d;
+            margin-top: 8px;
+            font-weight: 400;
+        }
+
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+
+        .welcome-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #007bff;
+        }
+
+            .welcome-section h2 {
+                color: #0a2a63;
+                font-size: 24px;
+                margin: 0 0 10px 0;
+                font-weight: 600;
+            }
+
+            .welcome-section p {
+                color: #5a6c7d;
+                font-size: 16px;
+                margin: 0;
+                line-height: 1.5;
+            }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 15px;
+            padding: 30px 25px;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+                pointer-events: none;
+            }
+
+            .card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 15px 35px rgba(0, 123, 255, 0.25);
+            }
+
+            .card:nth-child(1) {
+                background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            }
+
+            .card:nth-child(2) {
+                background: linear-gradient(135deg, #0056b3 0%, #003f87 100%);
+            }
+
+            .card:nth-child(3) {
+                background: linear-gradient(135deg, #003f87 0%, #002a5c 100%);
+            }
+
+        .card-icon {
+            font-size: 48px;
+            opacity: 0.9;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+            .card-content h2 {
+                font-size: 36px;
+                margin: 0 0 5px 0;
+                font-weight: 700;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-content span {
+                font-size: 16px;
+                opacity: 0.9;
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+
+        .action-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn-catalogo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 35px;
+            background: linear-gradient(135deg, #0056b3 0%, #003f87 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 86, 179, 0.25);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .btn-catalogo::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+                transition: left 0.5s ease;
+            }
+
+            .btn-catalogo:hover::before {
+                left: 100%;
+            }
+
+            .btn-catalogo:hover {
+                background: linear-gradient(135deg, #003f87 0%, #002a5c 100%);
+                transform: translateY(-2px);
+                box-shadow: 0 10px 30px rgba(0, 86, 179, 0.35);
+                text-decoration: none;
+                color: white;
+            }
+
+            .btn-catalogo i {
+                font-size: 20px;
+                transition: transform 0.3s ease;
+            }
+
+            .btn-catalogo:hover i {
+                transform: translateX(3px);
+            }
+
+        /* Sección de gráficos */
+        .charts-section {
+            margin-top: 40px;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #007bff;
+            transition: transform 0.3s ease;
+        }
+
+            .chart-container:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+            }
+
+        .chart-title {
+            font-size: 20px;
+            color: #0a2a63;
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .chart-title i {
+                color: #007bff;
+            }
+
+        .chart-canvas {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .chart-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .chart-stat {
+            text-align: center;
+        }
+
+        .chart-stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .chart-stat-label {
+            font-size: 12px;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive */
+        /* media (max-width: 768px) {
+            .charts-grid
+
+        {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .chart-canvas {
+            height: 250px;
+        }
+
+        .glass-title {
+            font-size: 28px;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px 20px;
+        }
+
+        .card-content h2 {
+            font-size: 30px;
+        }
+
+        .btn-catalogo {
+            padding: 15px 25px;
+            font-size: 16px;
+        }
+
+        } */
+
+        /* Animación de números */
+        /* keyframes countUp {
+            from
+
+        {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        }
+
+        .card-content h2 {
+            animation: countUp 0.8s ease-out forwards;
+        }
+
+        .card:nth-child(1) .card-content h2 {
+            animation-delay: 0.1s;
+        }
+
+        .card:nth-child(2) .card-content h2 {
+            animation-delay: 0.2s;
+        }
+
+        .card:nth-child(3) .card-content h2 {
+            animation-delay: 0.3s;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Header con efecto cristal templado -->
+    <div class="glass-header">
+        <div class="container">
+            <h1 class="glass-title">
+                <i class="fas fa-chart-line"></i>
+                Panel de Usuario
+            </h1>
+            <p class="glass-subtitle">Administra y visualiza tu librería digital</p>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="welcome-section">
+            <h2><i class="fas fa-home" style="color: #007bff; margin-right: 10px;"></i>Bienvenido de vuelta</h2>
+            <p>Aquí tienes un resumen completo de tu librería digital con todas las estadísticas actualizadas.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-book card-icon"></i>
+                <div class="card-content">
+                    <h2 id="totalBooksCard">@ViewBag.TotalBooks</h2>
+                    <span>Libros Disponibles</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-user-pen card-icon"></i>
+                <div class="card-content">
+                    <h2 id="totalAuthorsCard">@ViewBag.TotalAuthors</h2>
+                    <span>Autores Registrados</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fas fa-layer-group card-icon"></i>
+                <div class="card-content">
+                    <h2 id="totalGenresCard">@ViewBag.TotalGenres</h2>
+                    <span>Géneros Existentes</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts-section">
+            <div class="charts-grid">
+                <!-- Gráfico de Distribución -->
+                <div class="chart-container">
+                    <div class="chart-title">
+                        <i class="fas fa-chart-pie"></i>
+                        Distribución de Contenido
+                    </div>
+                    <div class="chart-canvas">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                    <div class="chart-stats">
+                        <div class="chart-stat">
+                            <div class="chart-stat-number">@ViewBag.TotalBooks</div>
+                            <div class="chart-stat-label">Total Libros</div>
+                        </div>
+                        <div class="chart-stat">
+                            <div class="chart-stat-number">@ViewBag.TotalAuthors</div>
+                            <div class="chart-stat-label">Autores</div>
+                        </div>
+                        <div class="chart-stat">
+                            <div class="chart-stat-number">@ViewBag.TotalGenres</div>
+                            <div class="chart-stat-label">Géneros</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gráfico de Barras Comparativo -->
+                <div class="chart-container">
+                    <div class="chart-title">
+                        <i class="fas fa-chart-bar"></i>
+                        Estadísticas Comparativas
+                    </div>
+                    <div class="chart-canvas">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+                    <div class="chart-stats">
+                        <div class="chart-stat">
+                            <div class="chart-stat-number">@(ViewBag.TotalAuthors > 0 ? Math.Round((double)ViewBag.TotalBooks / ViewBag.TotalAuthors, 1) : 0)</div>
+                            <div class="chart-stat-label">Libros/Autor</div>
+                        </div>
+                        <div class="chart-stat">
+                            <div class="chart-stat-number">@(ViewBag.TotalGenres > 0 ? Math.Round((double)ViewBag.TotalBooks / ViewBag.TotalGenres, 1) : 0)</div>
+                            <div class="chart-stat-label">Libros/Género</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-section">
+            <a href="/Catalogo" class="btn-catalogo">
+                <i class="fas fa-book-open"></i>
+                Ir al Catálogo
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Obtener datos del ViewBag
+        const totalBooks = @ViewBag.TotalBooks ?? 0;
+        const totalAuthors = @ViewBag.TotalAuthors ?? 0;
+        const totalGenres = @ViewBag.TotalGenres ?? 0;
+
+        // Configuración de colores
+        const colors = {
+            primary: '#007bff',
+            secondary: '#0056b3',
+            tertiary: '#003f87',
+            success: '#28a745',
+            info: '#17a2b8',
+            warning: '#ffc107',
+            gradient: ['#007bff', '#0056b3', '#003f87']
+        };
+
+        // Configuración común para gráficos
+        Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+        Chart.defaults.font.size = 12;
+        Chart.defaults.color = '#5a6c7d';
+
+        // Función para animar contadores
+        function animateCounter(element, target, duration = 1000) {
+            let current = 0;
+            const increment = target / (duration / 16); // 60fps
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        // Gráfico de distribución (Doughnut)
+        function createDistributionChart() {
+            const ctx = document.getElementById('distributionChart');
+            if (!ctx) {
+                console.error('Canvas distributionChart no encontrado');
+                return;
+            }
+
+            // Validar que tenemos datos
+            if (totalBooks === 0 && totalAuthors === 0 && totalGenres === 0) {
+                ctx.parentElement.innerHTML = '<p style="text-align: center; color: #6c757d; padding: 50px;">No hay datos disponibles para mostrar</p>';
+                return;
+            }
+
+            try {
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Libros', 'Autores', 'Géneros'],
+                        datasets: [{
+                            data: [totalBooks, totalAuthors, totalGenres],
+                            backgroundColor: [
+                                colors.primary,
+                                colors.secondary,
+                                colors.tertiary
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 3,
+                            hoverOffset: 10
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 20,
+                                    usePointStyle: true,
+                                    font: {
+                                        size: 14,
+                                        weight: '500'
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                titleColor: '#ffffff',
+                                bodyColor: '#ffffff',
+                                borderColor: colors.primary,
+                                borderWidth: 1,
+                                cornerRadius: 8,
+                                displayColors: true,
+                                callbacks: {
+                                    label: function(context) {
+                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                        if (total === 0) return `${context.label}: 0`;
+                                        const percentage = ((context.parsed * 100) / total).toFixed(1);
+                                        return `${context.label}: ${context.parsed} (${percentage}%)`;
+                                    }
+                                }
+                            }
+                        },
+                        animation: {
+                            animateRotate: true,
+                            animateScale: true,
+                            duration: 1500,
+                            easing: 'easeOutQuart'
+                        }
+                    }
+                });
+                console.log('Gráfico de distribución creado exitosamente');
+            } catch (error) {
+                console.error('Error al crear el gráfico de distribución:', error);
+            }
+        }
+
+        // Gráfico de barras comparativo
+        function createComparisonChart() {
+            const ctx = document.getElementById('comparisonChart');
+            if (!ctx) {
+                console.error('Canvas comparisonChart no encontrado');
+                return;
+            }
+
+            // Validar que tenemos datos
+            if (totalBooks === 0 && totalAuthors === 0 && totalGenres === 0) {
+                ctx.parentElement.innerHTML = '<p style="text-align: center; color: #6c757d; padding: 50px;">No hay datos disponibles para mostrar</p>';
+                return;
+            }
+
+            try {
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Libros', 'Autores', 'Géneros'],
+                        datasets: [{
+                            label: 'Cantidad',
+                            data: [totalBooks, totalAuthors, totalGenres],
+                            backgroundColor: [
+                                colors.primary + '80',
+                                colors.secondary + '80',
+                                colors.tertiary + '80'
+                            ],
+                            borderColor: [
+                                colors.primary,
+                                colors.secondary,
+                                colors.tertiary
+                            ],
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            borderSkipped: false,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                titleColor: '#ffffff',
+                                bodyColor: '#ffffff',
+                                borderColor: colors.primary,
+                                borderWidth: 1,
+                                cornerRadius: 8,
+                                callbacks: {
+                                    title: function(context) {
+                                        return `${context[0].label}`;
+                                    },
+                                    label: function(context) {
+                                        return `Cantidad: ${context.parsed.y}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1,
+                                    color: '#6c757d'
+                                },
+                                grid: {
+                                    color: '#e9ecef',
+                                    lineWidth: 1
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    color: '#6c757d',
+                                    font: {
+                                        weight: '500'
+                                    }
+                                },
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        },
+                        animation: {
+                            duration: 1500,
+                            easing: 'easeOutQuart'
+                        }
+                    }
+                });
+                console.log('Gráfico de comparación creado exitosamente');
+            } catch (error) {
+                console.error('Error al crear el gráfico de comparación:', error);
+            }
+        }
+
+        // Función para esperar a que Chart.js se cargue
+        function waitForChart() {
+            return new Promise((resolve) => {
+                if (typeof Chart !== 'undefined') {
+                    resolve();
+                } else {
+                    const checkChart = setInterval(() => {
+                        if (typeof Chart !== 'undefined') {
+                            clearInterval(checkChart);
+                            resolve();
+                        }
+                    }, 100);
+                }
+            });
+        }
+
+        // Inicializar cuando el DOM y Chart.js estén cargados
+        document.addEventListener('DOMContentLoaded', async function() {
+            console.log('DOM cargado, esperando Chart.js...');
+            console.log('Datos obtenidos:', { totalBooks, totalAuthors, totalGenres });
+
+            // Animar contadores de las tarjetas
+            const counters = document.querySelectorAll('.card-content h2');
+            counters.forEach((counter, index) => {
+                const target = parseInt(counter.textContent) || 0;
+                if (target > 0) {
+                    animateCounter(counter, target, 1200);
+                }
+            });
+
+            try {
+                // Esperar a que Chart.js se cargue
+                await waitForChart();
+                console.log('Chart.js cargado correctamente, versión:', Chart.version);
+
+                // Crear gráficos después de que Chart.js esté disponible
+                setTimeout(() => {
+                    createDistributionChart();
+                    createComparisonChart();
+                }, 200);
+
+            } catch (error) {
+                console.error('Error al cargar Chart.js:', error);
+                // Mostrar mensaje de error en lugar de los gráficos
+                document.getElementById('distributionChart').parentElement.innerHTML =
+                    '<p style="text-align: center; color: #dc3545; padding: 50px;">Error al cargar los gráficos. Por favor, recarga la página.</p>';
+                document.getElementById('comparisonChart').parentElement.innerHTML =
+                    '<p style="text-align: center; color: #dc3545; padding: 50px;">Error al cargar los gráficos. Por favor, recarga la página.</p>';
+            }
+        });
+
+        // Verificar carga de Chart.js en el evento window.onload como respaldo
+        window.addEventListener('load', function() {
+            if (typeof Chart === 'undefined') {
+                console.error('Chart.js no se cargó correctamente después del evento load');
+            }
+        });
+    </script>
+</body>
+</html>

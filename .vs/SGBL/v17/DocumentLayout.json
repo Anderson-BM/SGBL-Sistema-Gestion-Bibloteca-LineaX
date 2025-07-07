@@ -3,8 +3,92 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\registro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\registro\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\home\\dashboarduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\dashboarduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\author\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\author\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\home\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5761BCDC-CBF8-4BC8-9789-A424A7F71C0F}|SGBL.Infrastructure.Shared\\SGBL.Infrastructure.Shared.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.shared\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5761BCDC-CBF8-4BC8-9789-A424A7F71C0F}|SGBL.Infrastructure.Shared\\SGBL.Infrastructure.Shared.csproj|solutionrelative:sgbl.infrastructure.shared\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\seeds\\defaultsuperadmiuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultsuperadmiuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.domain\\settings\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|solutionrelative:sgbl.core.domain\\settings\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.domain\\common\\auditablebaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|solutionrelative:sgbl.core.domain\\common\\auditablebaseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\mappings\\generalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\mappings\\generalprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,40 +103,12 @@
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\seeds\\defaultsuperadmiuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultsuperadmiuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\author\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\author\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\catalogocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +131,6 @@
       "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\interfaces\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5761BCDC-CBF8-4BC8-9789-A424A7F71C0F}|SGBL.Infrastructure.Shared\\SGBL.Infrastructure.Shared.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.shared\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5761BCDC-CBF8-4BC8-9789-A424A7F71C0F}|SGBL.Infrastructure.Shared\\SGBL.Infrastructure.Shared.csproj|solutionrelative:sgbl.infrastructure.shared\\service\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,20 +151,8 @@
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\middlewares\\loginauthorize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\registrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -125,10 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\interfaces\\services\\iwebappaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\interfaces\\services\\iwebappaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,10 +181,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\middlewares\\validateusersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -186,11 +218,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 28,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IAccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IAccountService.cs",
@@ -203,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 32,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\AuthorController.cs",
@@ -216,297 +248,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvw4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T05:00:50.559Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IdentityContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T18:42:43.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DefaultSuperAdmiUser.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T21:25:56.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:14:00.484Z"
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAO4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T05:39:09.276Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Catalogo\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Catalogo\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Catalogo\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Catalogo\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T04:50:01.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Program.cs",
               "RelativeDocumentMoniker": "SGBL\\Program.cs",
               "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Program.cs",
               "RelativeToolTip": "SGBL\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-01T06:06:12.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Catalogo\\Index.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\Catalogo\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Catalogo\\Index.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\Catalogo\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\User\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\AccessDenied.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\User\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T04:50:01.83Z"
+              "WhenOpened": "2025-07-01T05:35:54.097Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwDIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T05:39:09.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DefaultRoles.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T21:25:07.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Author\\Index.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\Author\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Author\\Index.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\Author\\Index.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACcAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T23:17:38.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DefaultBasicUser.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAsAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T21:24:51.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Enums\\Roles.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Application\\Enums\\Roles.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Enums\\Roles.cs",
-              "RelativeToolTip": "SGBL.Core.Application\\Enums\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T18:14:56.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Register.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\User\\Register.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Register.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\User\\Register.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T05:36:34.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\Index.cshtml",
               "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "SGBL\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABrAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T05:33:01.781Z"
+              "WhenOpened": "2025-07-01T05:33:01.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CatalogoController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\CatalogoController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\CatalogoController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\CatalogoController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\CatalogoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T05:32:02.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T16:58:36.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
-              "RelativeToolTip": "SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:16:46.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\UserController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\UserController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:23:23.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "SGBL.Core.Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC0AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:01:11.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\HomeController.cs",
               "RelativeToolTip": "SGBL\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAFUAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:10:08.849Z"
+              "WhenOpened": "2025-07-01T15:10:08.849Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LibroController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\LibroController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\LibroController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:12:25.427Z"
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AgIAANYCAAAAAAAAAAAqwOMCAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T20:08:55.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Registro\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Registro\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Registro\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Registro\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAA4AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T23:39:41.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\DashboardUser.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Home\\DashboardUser.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\DashboardUser.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Home\\DashboardUser.cshtml",
+              "ViewState": "AgIAANwCAAAAAAAAAAAAAO0CAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T22:56:41.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Author\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Author\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Author\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Author\\Index.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T23:17:38.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "GeneroController.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\GeneroController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\GeneroController.cs",
               "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\GeneroController.cs",
               "RelativeToolTip": "SGBL\\Controllers\\GeneroController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:14:46.756Z"
+              "WhenOpened": "2025-07-01T15:14:46.756Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RegistroController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RegistroController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\RegistroController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RegistroController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\RegistroController.cs",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T21:39:33.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Catalogo.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Catalogo.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Home\\Catalogo.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Home\\Catalogo.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Home\\Catalogo.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:15:27.197Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-06T21:41:12.679Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAswFIAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:34:03.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "LibroViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
-              "RelativeToolTip": "SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwA0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:37:30.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 17,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
@@ -518,7 +442,236 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 13,
+              "Title": "RegistroController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RegistroController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\RegistroController.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RegistroController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\RegistroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T15:15:27.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Shared\\Service\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:58:36.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DefaultSuperAdmiUser.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultSuperAdmiUser.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T21:25:56.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Settings\\MailSettings.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Domain\\Settings\\MailSettings.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Settings\\MailSettings.cs",
+              "RelativeToolTip": "SGBL.Core.Domain\\Settings\\MailSettings.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAswAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T23:50:12.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuditableBaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Common\\AuditableBaseEntity.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Domain\\Common\\AuditableBaseEntity.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Common\\AuditableBaseEntity.cs",
+              "RelativeToolTip": "SGBL.Core.Domain\\Common\\AuditableBaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T23:49:43.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GeneralProfile.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Mappings\\GeneralProfile.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\Mappings\\GeneralProfile.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Mappings\\GeneralProfile.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\Mappings\\GeneralProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T23:49:17.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:14:00.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\Enums\\Roles.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Enums\\Roles.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\Enums\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T18:14:56.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T18:42:43.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DefaultRoles.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T21:25:07.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DefaultBasicUser.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAsAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T21:24:51.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\User\\Register.cshtml",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\User\\Register.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T05:36:34.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CatalogoController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\CatalogoController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\CatalogoController.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\CatalogoController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\CatalogoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T05:32:02.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\Interfaces\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:16:46.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:23:23.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:01:11.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LibroController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\LibroController.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\LibroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T15:12:25.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Persistence\\Context\\ApplicationContext.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswFIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T15:34:03.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LibroViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
+              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\ViewModels\\Libro\\LibroViewModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T15:37:30.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "LibroService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\LibroService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\LibroService.cs",
@@ -530,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 43,
               "Title": "ResetPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\ResetPassword.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\ResetPassword.cshtml",
@@ -542,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\ForgotPassword.cshtml",
@@ -554,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 44,
               "Title": "ConfirmEmail.cshtml",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\ConfirmEmail.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\ConfirmEmail.cshtml",
@@ -566,19 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "AccessDenied.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\AccessDenied.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\User\\AccessDenied.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\AccessDenied.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\User\\AccessDenied.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-01T05:35:54.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "SessionHelper.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Helpers\\SessionHelper.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Helpers\\SessionHelper.cs",
@@ -590,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "PasswordEncryptation.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Helpers\\PasswordEncryptation.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Helpers\\PasswordEncryptation.cs",
@@ -602,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "ValidateUserSession.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Middlewares\\ValidateUserSession.cs",
               "RelativeDocumentMoniker": "SGBL\\Middlewares\\ValidateUserSession.cs",
@@ -614,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "LoginAuthorize.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Middlewares\\LoginAuthorize.cs",
               "RelativeDocumentMoniker": "SGBL\\Middlewares\\LoginAuthorize.cs",
@@ -626,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "IGeneroService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IGeneroService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IGeneroService.cs",
@@ -638,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "IGenericService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IGenericService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IGenericService.cs",
@@ -650,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "IAuthorService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IAuthorService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IAuthorService.cs",
@@ -662,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "ILibroService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\ILibroService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\ILibroService.cs",
@@ -674,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "IBaseAccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IBaseAccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IBaseAccountService.cs",
@@ -686,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\ServiceRegistration.cs",
@@ -698,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 33,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IUserService.cs",
@@ -710,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "IWebAppAccountService.cs",
               "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Interfaces\\Services\\IWebAppAccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Interfaces\\Services\\IWebAppAccountService.cs",
