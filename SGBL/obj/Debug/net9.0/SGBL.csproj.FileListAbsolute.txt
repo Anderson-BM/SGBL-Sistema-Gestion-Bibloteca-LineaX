@@ -1,3 +1,12 @@
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.csproj.AssemblyReference.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.AssemblyInfoInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.AssemblyInfo.cs
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.RazorAssemblyInfo.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.RazorAssemblyInfo.cs
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.sourcelink.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\appsettings.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\SGBL.staticwebassets.runtime.json
@@ -573,15 +582,7 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\SGBL.Core.Dom
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\SGBL.Infrastructure.Identity.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\SGBL.Infrastructure.Persistence.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\SGBL.Infrastructure.Shared.pdb
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.csproj.AssemblyReference.cache
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.AssemblyInfoInputs.cache
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.AssemblyInfo.cs
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.csproj.CoreCompileInputs.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.RazorAssemblyInfo.cache
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.RazorAssemblyInfo.cs
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\scopedcss\bundle\SGBL.styles.css
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\scopedcss\projectbundle\SGBL.bundle.scp.css
@@ -660,4 +661,3 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\refint\SGBL.d
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\ref\SGBL.dll
-C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.sourcelink.json

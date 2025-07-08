@@ -10,6 +10,7 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Infrastructure.Persistence.AssemblyInfoInputs.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Infrastructure.Persistence.AssemblyInfo.cs
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Infrastructure.Persistence.sourcelink.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Inf.7B6F2F3B.Up2Date
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\SGBL.Infrastructure.Persistence.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Persistence\obj\Debug\net9.0\refint\SGBL.Infrastructure.Persistence.dll

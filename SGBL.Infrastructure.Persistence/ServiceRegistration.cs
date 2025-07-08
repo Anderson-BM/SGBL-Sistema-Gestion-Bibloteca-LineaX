@@ -30,6 +30,7 @@ namespace SGBL.Infrastructure.Persistence
             services.AddTransient<ILibroRepository, LibroRepository>();
             services.AddTransient<IAuthorRepository, AuthorRepository>();
             services.AddTransient<IGeneroRepository, GeneroRepository>();
+            services.AddTransient<IPrestamoRepository, PrestamoRepository>();
             #endregion
         }
     }

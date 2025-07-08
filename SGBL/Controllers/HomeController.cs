@@ -1,11 +1,16 @@
-using System.Diagnostics;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.Metadata;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SGBL.Core.Application.Interfaces.Services;
+using SGBL.Core.Application.Services;
 using SGBL.Core.Application.ViewModels.Libro;
+using SGBL.Core.Application.ViewModels.Prestamo;
+using SGBL.Core.Domain.Enums;
+using SGBL.Infrastructure.Identity.Entities;
 using SGBL.Models;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace SGBL.Controllers
 {
@@ -15,12 +20,18 @@ namespace SGBL.Controllers
         private readonly ILibroService _libroService;
         private readonly IGeneroService _generoService;
         private readonly IAuthorService _authorService;
+        private readonly IPrestamoService _presetamoService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public HomeController(ILibroService libroService, IGeneroService generoService, IAuthorService authorService)
+
+
+        public HomeController(ILibroService libroService, IGeneroService generoService, IAuthorService authorService, IPrestamoService prestamoService, UserManager<ApplicationUser> userManager)
         { 
             _libroService = libroService;
             _generoService = generoService;
-            _authorService = authorService;    
+            _authorService = authorService;
+            _presetamoService = prestamoService;
+            _userManager = userManager;
         }
 
         //------------------------------------------------------------------------------------------------------------------
@@ -64,9 +75,6 @@ namespace SGBL.Controllers
         }
 
 
-
-
-
         public async Task<IActionResult> DashboardUser()
         {
             try
@@ -93,6 +101,34 @@ namespace SGBL.Controllers
                 return View();
             }
         }
+
+
+        //[Authorize]
+        //[HttpPost]
+        //public async Task<IActionResult> Reservar(int id)
+        //{
+        //    var user = await _userManager.GetUserAsync(User);
+        //    if (user == null)
+        //    {
+        //        return RedirectToAction("Login", "Account");
+        //    }
+
+        //    var nuevoPrestamo = new SavePrestamoViewModel
+        //    {
+        //        LibroId = id,
+        //      //  UsuarioId = user.Id,
+        //        Estado = EstadoPrestamo.Pendiente,
+        //        FechaSolicitud = DateTime.Now
+        //    };
+
+        //    await _presetamoService.Add(nuevoPrestamo);
+
+        //    return RedirectToAction("Index", "Prestamo");
+        //}
+
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

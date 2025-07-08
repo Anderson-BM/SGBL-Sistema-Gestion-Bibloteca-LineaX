@@ -15,6 +15,8 @@ namespace SGBL.Infrastructure.Persistence.Context
         public DbSet<Libro> Libro { get; set; } 
         public DbSet<Author> Autores { get; set; }
         public DbSet<Genero> Generos { get; set; }
+        public DbSet<Prestamo> Prestamos { get; set; } 
+
 
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
@@ -55,6 +57,9 @@ namespace SGBL.Infrastructure.Persistence.Context
             modelBuilder.Entity<Genero>()
                 .ToTable("Generos");
 
+            modelBuilder.Entity<Prestamo>()
+                .ToTable("Prestamos"); 
+
             #endregion
 
             #region "primary keys"
@@ -66,6 +71,10 @@ namespace SGBL.Infrastructure.Persistence.Context
 
             modelBuilder.Entity<Genero>()
                 .HasKey(g => g.Id);
+
+            modelBuilder.Entity<Prestamo>()
+                .HasKey(p => p.Id); 
+
             #endregion
 
             #region "Relationships"
@@ -82,6 +91,20 @@ namespace SGBL.Infrastructure.Persistence.Context
                 .WithOne(l => l.Genero)
                 .HasForeignKey(l => l.GeneroId)
                 .OnDelete(DeleteBehavior.Cascade); // cuando borro el género borro los Libros
+
+            //  Relación Prestamo -> Libro
+            modelBuilder.Entity<Prestamo>()
+                .HasOne(p => p.Libro)
+                .WithMany()
+                .HasForeignKey(p => p.LibroId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            //  Relación Prestamo -> Usuario
+            modelBuilder.Entity<Prestamo>()
+                .HasOne(p => p.Usuario)
+                .WithMany()
+                .HasForeignKey(p => p.UsuarioId)
+                .IsRequired(false); // ← esto indica que es opcional
             #endregion
 
             #region "Property configurations"
@@ -108,7 +131,19 @@ namespace SGBL.Infrastructure.Persistence.Context
               .HasMaxLength(100);
             #endregion
 
-            #endregion       
+            #region Prestamo
+            modelBuilder.Entity<Prestamo>()
+                .Property(p => p.Estado)
+                .IsRequired();
+
+            modelBuilder.Entity<Prestamo>()
+                .Property(p => p.FechaSolicitud)
+                .IsRequired();
+            #endregion
+
+
+
+            #endregion
         }
     }
 }

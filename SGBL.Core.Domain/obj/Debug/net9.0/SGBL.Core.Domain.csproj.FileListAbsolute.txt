@@ -5,6 +5,7 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\S
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.AssemblyInfoInputs.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.AssemblyInfo.cs
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.sourcelink.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\refint\SGBL.Core.Domain.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.pdb

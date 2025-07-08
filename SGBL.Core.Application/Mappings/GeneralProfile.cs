@@ -3,6 +3,7 @@ using SGBL.Core.Application.Dtos.Account;
 using SGBL.Core.Application.ViewModels.Author;
 using SGBL.Core.Application.ViewModels.Genero;
 using SGBL.Core.Application.ViewModels.Libro;
+using SGBL.Core.Application.ViewModels.Prestamo;
 using SGBL.Core.Application.ViewModels.User;
 using SGBL.Core.Domain.Entities;
 
@@ -91,6 +92,31 @@ namespace SGBL.Core.Application.Mappings
                 .ForMember(x => x.Error, opt => opt.Ignore())
                 .ReverseMap();
             #endregion
+
+
+
+            #region PrestamoProfile
+            CreateMap<Prestamo, SavePrestamoViewModel>()
+                 .ReverseMap()
+                 .ForMember(x => x.Created, opt => opt.Ignore())
+                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                 .ForMember(x => x.LastModified, opt => opt.Ignore())
+                 .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
+                 .ForMember(x => x.Libro, opt => opt.Ignore())
+                 .ForMember(x => x.Usuario, opt => opt.Ignore());
+
+            CreateMap<Prestamo, PrestamoViewModel>()
+                .ForMember(dest => dest.TituloLibro, opt => opt.MapFrom(src => src.Libro.Name))
+                .ForMember(dest => dest.NombreUsuario, opt => opt.MapFrom(src => src.Usuario.Name))
+                .ReverseMap()
+                .ForMember(x => x.Created, opt => opt.Ignore())
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
+                .ForMember(x => x.Libro, opt => opt.Ignore())
+                .ForMember(x => x.Usuario, opt => opt.Ignore());
+            #endregion
+
         }
     }
 }

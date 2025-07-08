@@ -8,6 +8,7 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Core.Application.AssemblyInfoInputs.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Core.Application.AssemblyInfo.cs
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Core.Application.sourcelink.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Cor.CAA236C7.Up2Date
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\SGBL.Core.Application.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Application\obj\Debug\net9.0\refint\SGBL.Core.Application.dll

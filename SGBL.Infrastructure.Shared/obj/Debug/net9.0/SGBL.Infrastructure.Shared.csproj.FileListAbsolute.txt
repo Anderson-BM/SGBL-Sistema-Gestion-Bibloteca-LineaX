@@ -6,6 +6,7 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debu
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.AssemblyInfoInputs.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.AssemblyInfo.cs
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.sourcelink.json
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\refint\SGBL.Infrastructure.Shared.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.pdb

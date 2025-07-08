@@ -21,6 +21,8 @@ namespace SGBL.Core.Application
             services.AddTransient<ILibroService, LibroService>();
             services.AddTransient<IAuthorService, AuthorService>();
             services.AddTransient<IGeneroService, GeneroService>();
+            services.AddTransient<IPrestamoService, PrestamoService>();
+
             #endregion
         }
     }

@@ -125,6 +125,12 @@
                                         <button class="btn btn-warning btn-sm w-50 rounded-pill shadow-sm">
                                             <i class="bi bi-bookmark-plus me-1"></i> Reserva
                                         </button>
+                                          <form asp-controller="Home" asp-action="Reservar" method="post" class="w-50">
+                                              <input type="hidden" name="id" value="@item.Id" />
+                                              <button type="submit" class="btn btn-warning btn-sm w-100 rounded-pill shadow-sm">
+                                              <i class="bi bi-bookmark-plus me-1"></i> Reserva
+                                          </button>
+                                       </form>
                                     </div>
                                 </div>
 
