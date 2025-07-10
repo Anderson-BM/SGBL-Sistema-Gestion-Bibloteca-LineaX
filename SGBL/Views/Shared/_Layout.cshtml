@@ -3,10 +3,12 @@
 @using SGBL.Core.Application.Helpers;
 @using SGBL.Core.Application.ViewModels.User
 @inject IHttpContextAccessor httpContextAccessor
-@{
+@{  
+    //  ASIGNACIONES DE ROLES NECESARIOS
     var User = httpContextAccessor.HttpContext.Session.Get<AuthenticationResponse>("user");
     var isAdmi = User != null ? User.Roles.Any(r => r == "Admi") : false;
-     var isBasic = User != null ? User.Roles.Any(r => r == "Basic") : false;
+    var isBasic = User != null ? User.Roles.Any(r => r == "Basic") : false;
+    var isBiblotecario = User != null ? User.Roles.Any(r => r == "Biblotecario") : false;
 }
 
 
@@ -321,7 +323,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Prestamo" asp-action="Index">
-                                        <i class="fas fa-calendar-check"></i>Reservas
+                                        <i class="fas fa-calendar-check"></i>Prestamos y Devoluciones
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -361,6 +363,27 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
                                         <i class="fas fa-list"></i>Catálogo
+                                    </a>
+                                </li>
+                            }
+
+
+                            if (isBiblotecario)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                        <i class="fas fa-home"></i>Inicio
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="DashboardBiblotecario">
+                                        <i class="fas fa-chart-line"></i>Dashboard
+                                    </a>
+                                </li>
+                          
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                                        <i class="fas fa-list"></i>Administrar Catálogo
                                     </a>
                                 </li>
                             }

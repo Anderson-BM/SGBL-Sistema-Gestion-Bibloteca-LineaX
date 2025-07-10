@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>Dashboard - Librería Digital</title>
+    <title>Mi Dashboard - Librería Digital</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <script>
@@ -154,11 +154,11 @@
             }
 
             .card:nth-child(2) {
-                background: linear-gradient(135deg, #0056b3 0%, #003f87 100%);
+                background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
             }
 
             .card:nth-child(3) {
-                background: linear-gradient(135deg, #003f87 0%, #002a5c 100%);
+                background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
             }
 
         .card-icon {
@@ -313,73 +313,73 @@
         }
 
         /* Responsive */
-        /* media (max-width: 768px) {
-            .charts-grid
+        /*  media (max-width: 768px) {
+                    .charts-grid
 
-        {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+                {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
 
-        .chart-canvas {
-            height: 250px;
-        }
+                .chart-canvas {
+                    height: 250px;
+                }
 
-        .glass-title {
-            font-size: 28px;
-        }
+                .glass-title {
+                    font-size: 28px;
+                }
 
-        .cards {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+                .cards {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
 
-        .card {
-            padding: 25px 20px;
-        }
+                .card {
+                    padding: 25px 20px;
+                }
 
-        .card-content h2 {
-            font-size: 30px;
-        }
+                .card-content h2 {
+                    font-size: 30px;
+                }
 
-        .btn-catalogo {
-            padding: 15px 25px;
-            font-size: 16px;
-        }
+                .btn-catalogo {
+                    padding: 15px 25px;
+                    font-size: 16px;
+                }
 
-        } */
+                } */
 
         /* Animación de números */
-        /* keyframes countUp {
-            from
+        /*      keyframes countUp {
+                    from
 
-        {
-            opacity: 0;
-            transform: translateY(20px);
-        }
+                {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
 
-        }
+                }
 
-        .card-content h2 {
-            animation: countUp 0.8s ease-out forwards;
-        }
+                .card-content h2 {
+                    animation: countUp 0.8s ease-out forwards;
+                }
 
-        .card:nth-child(1) .card-content h2 {
-            animation-delay: 0.1s;
-        }
+                .card:nth-child(1) .card-content h2 {
+                    animation-delay: 0.1s;
+                }
 
-        .card:nth-child(2) .card-content h2 {
-            animation-delay: 0.2s;
-        }
+                .card:nth-child(2) .card-content h2 {
+                    animation-delay: 0.2s;
+                }
 
-        .card:nth-child(3) .card-content h2 {
-            animation-delay: 0.3s;
-        } */
+                .card:nth-child(3) .card-content h2 {
+                    animation-delay: 0.3s;
+                } */
     </style>
 </head>
 <body>
@@ -387,87 +387,87 @@
     <div class="glass-header">
         <div class="container">
             <h1 class="glass-title">
-                <i class="fas fa-chart-line"></i>
-                Panel del el Administrador  <span>@(@User.Identity.Name)</span>
+                <i class="fas fa-user-circle"></i>
+                Panel del el Biblotecario   <span>@(@User.Identity.Name)</span>
             </h1>
-            <p class="glass-subtitle">Administra y visualiza tu librería digital</p>
+            <p class="glass-subtitle">Tu resumen personal de actividad en la librería digital</p>
         </div>
     </div>
 
     <div class="dashboard-container">
         <div class="welcome-section">
-            <h2><i class="fas fa-home" style="color: #007bff; margin-right: 10px;"></i>Bienvenido de vuelta  <span>@(@User.Identity.Name)</span> </h2>
-            <p>Aquí tienes un resumen completo de tu librería digital con todas las estadísticas actualizadas.</p>
+            <h2><i class="fas fa-heart" style="color: #007bff; margin-right: 10px;"></i>¡Hola! Bienvenido a tu espacio personal  <span>@(@User.Identity.Name)</span> </h2>
+            <p>Aquí puedes ver tu actividad en la librería digital, tus libros prestados y el historial de reservas.</p>
         </div>
 
         <div class="cards">
             <div class="card">
-                <i class="fas fa-book card-icon"></i>
+                <i class="fas fa-book-open card-icon"></i>
                 <div class="card-content">
-                    <h2 id="totalBooksCard">@ViewBag.TotalBooks</h2>
+                    <h2 id="totalBooksCard">43</h2>
                     <span>Libros Disponibles</span>
                 </div>
             </div>
             <div class="card">
-                <i class="fas fa-user-pen card-icon"></i>
+                <i class="fas fa-bookmark card-icon"></i>
                 <div class="card-content">
-                    <h2 id="totalAuthorsCard">@ViewBag.TotalAuthors</h2>
-                    <span>Autores Registrados</span>
+                    <h2 id="borrowedBooksCard">3</h2>
+                    <span>Libros Prestados</span>
                 </div>
             </div>
             <div class="card">
-                <i class="fas fa-layer-group card-icon"></i>
+                <i class="fas fa-clock card-icon"></i>
                 <div class="card-content">
-                    <h2 id="totalGenresCard">@ViewBag.TotalGenres</h2>
-                    <span>Géneros Existentes</span>
+                    <h2 id="reservationsCard">8</h2>
+                    <span>Reservas Realizadas</span>
                 </div>
             </div>
         </div>
 
         <div class="charts-section">
             <div class="charts-grid">
-                <!-- Gráfico de Distribución -->
+                <!-- Gráfico de Actividad Personal -->
                 <div class="chart-container">
                     <div class="chart-title">
                         <i class="fas fa-chart-pie"></i>
-                        Distribución de Contenido
+                        Mi Actividad en la Librería
                     </div>
                     <div class="chart-canvas">
-                        <canvas id="distributionChart"></canvas>
+                        <canvas id="activityChart"></canvas>
                     </div>
                     <div class="chart-stats">
                         <div class="chart-stat">
-                            <div class="chart-stat-number">@ViewBag.TotalBooks</div>
-                            <div class="chart-stat-label">Total Libros</div>
+                            <div class="chart-stat-number">3</div>
+                            <div class="chart-stat-label">Prestados</div>
                         </div>
                         <div class="chart-stat">
-                            <div class="chart-stat-number">@ViewBag.TotalAuthors</div>
-                            <div class="chart-stat-label">Autores</div>
+                            <div class="chart-stat-number">8</div>
+                            <div class="chart-stat-label">Reservas</div>
                         </div>
                         <div class="chart-stat">
-                            <div class="chart-stat-number">@ViewBag.TotalGenres</div>
-                            <div class="chart-stat-label">Géneros</div>
+                            <div class="chart-stat-number">125</div>
+                            <div class="chart-stat-label">Disponibles</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gráfico de Barras Comparativo -->
+                <!-- Gráfico de Estadísticas Mensuales -->
                 <div class="chart-container">
                     <div class="chart-title">
-                        <i class="fas fa-chart-bar"></i>
-                        Estadísticas Comparativas
+                        <i class="fas fa-chart-line"></i>
+                        Actividad Mensual
                     </div>
                     <div class="chart-canvas">
-                        <canvas id="comparisonChart"></canvas>
+                        <canvas id="monthlyChart"></canvas>
                     </div>
                     <div class="chart-stats">
                         <div class="chart-stat">
-                            <div class="chart-stat-number">@(ViewBag.TotalAuthors > 0 ? Math.Round((double)ViewBag.TotalBooks / ViewBag.TotalAuthors, 1) : 0)</div>
-                            <div class="chart-stat-label">Libros/Autor</div>
+                            <div class="chart-stat-number">2.7</div>
+                            <div class="chart-stat-label">Promedio Mensual</div>
                         </div>
                         <div class="chart-stat">
-                            <div class="chart-stat-number">@(ViewBag.TotalGenres > 0 ? Math.Round((double)ViewBag.TotalBooks / ViewBag.TotalGenres, 1) : 0)</div>
-                            <div class="chart-stat-label">Libros/Género</div>
+                            <div class="chart-stat-number">5</div>
+                            <div class="chart-stat-label">Mejor Mes</div>
                         </div>
                     </div>
                 </div>
@@ -476,27 +476,33 @@
 
         <div class="action-section">
             <a href="/Catalogo" class="btn-catalogo">
-                <i class="fas fa-book-open"></i>
-                Ir al Catálogo
+                <i class="fas fa-search"></i>
+                Explorar Catálogo
             </a>
         </div>
     </div>
 
     <script>
-        // Obtener datos del ViewBag
-        const totalBooks = @ViewBag.TotalBooks ?? 0;
-        const totalAuthors = @ViewBag.TotalAuthors ?? 0;
-        const totalGenres = @ViewBag.TotalGenres ?? 0;
+        // Datos simulados para el usuario (estos vendrían del backend)
+        const totalBooks = 125;
+        const borrowedBooks = 3;
+        const reservations = 8;
+
+        // Datos mensuales simulados
+        const monthlyData = {
+            labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+            borrowed: [2, 1, 3, 2, 5, 3],
+            reserved: [1, 2, 1, 3, 2, 4]
+        };
 
         // Configuración de colores
         const colors = {
             primary: '#007bff',
-            secondary: '#0056b3',
-            tertiary: '#003f87',
             success: '#28a745',
-            info: '#17a2b8',
             warning: '#ffc107',
-            gradient: ['#007bff', '#0056b3', '#003f87']
+            info: '#17a2b8',
+            light: '#f8f9fa',
+            gradient: ['#007bff', '#28a745', '#ffc107']
         };
 
         // Configuración común para gráficos
@@ -507,7 +513,7 @@
         // Función para animar contadores
         function animateCounter(element, target, duration = 1000) {
             let current = 0;
-            const increment = target / (duration / 16); // 60fps
+            const increment = target / (duration / 16);
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
@@ -519,17 +525,11 @@
             }, 16);
         }
 
-        // Gráfico de distribución (Doughnut)
-        function createDistributionChart() {
-            const ctx = document.getElementById('distributionChart');
+        // Gráfico de actividad personal (Doughnut)
+        function createActivityChart() {
+            const ctx = document.getElementById('activityChart');
             if (!ctx) {
-                console.error('Canvas distributionChart no encontrado');
-                return;
-            }
-
-            // Validar que tenemos datos
-            if (totalBooks === 0 && totalAuthors === 0 && totalGenres === 0) {
-                ctx.parentElement.innerHTML = '<p style="text-align: center; color: #6c757d; padding: 50px;">No hay datos disponibles para mostrar</p>';
+                console.error('Canvas activityChart no encontrado');
                 return;
             }
 
@@ -537,13 +537,13 @@
                 new Chart(ctx, {
                     type: 'doughnut',
                     data: {
-                        labels: ['Libros', 'Autores', 'Géneros'],
+                        labels: ['Libros Prestados', 'Reservas Realizadas', 'Libros Disponibles'],
                         datasets: [{
-                            data: [totalBooks, totalAuthors, totalGenres],
+                            data: [borrowedBooks, reservations, totalBooks - borrowedBooks - reservations],
                             backgroundColor: [
                                 colors.primary,
-                                colors.secondary,
-                                colors.tertiary
+                                colors.success,
+                                colors.warning + '80'
                             ],
                             borderColor: '#ffffff',
                             borderWidth: 3,
@@ -575,7 +575,7 @@
                                 displayColors: true,
                                 callbacks: {
                                     label: function(context) {
-                                        const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                        const total = borrowedBooks + reservations + (totalBooks - borrowedBooks - reservations);
                                         if (total === 0) return `${context.label}: 0`;
                                         const percentage = ((context.parsed * 100) / total).toFixed(1);
                                         return `${context.label}: ${context.parsed} (${percentage}%)`;
@@ -591,47 +591,49 @@
                         }
                     }
                 });
-                console.log('Gráfico de distribución creado exitosamente');
+                console.log('Gráfico de actividad creado exitosamente');
             } catch (error) {
-                console.error('Error al crear el gráfico de distribución:', error);
+                console.error('Error al crear el gráfico de actividad:', error);
             }
         }
 
-        // Gráfico de barras comparativo
-        function createComparisonChart() {
-            const ctx = document.getElementById('comparisonChart');
+        // Gráfico de actividad mensual (Línea)
+        function createMonthlyChart() {
+            const ctx = document.getElementById('monthlyChart');
             if (!ctx) {
-                console.error('Canvas comparisonChart no encontrado');
-                return;
-            }
-
-            // Validar que tenemos datos
-            if (totalBooks === 0 && totalAuthors === 0 && totalGenres === 0) {
-                ctx.parentElement.innerHTML = '<p style="text-align: center; color: #6c757d; padding: 50px;">No hay datos disponibles para mostrar</p>';
+                console.error('Canvas monthlyChart no encontrado');
                 return;
             }
 
             try {
                 new Chart(ctx, {
-                    type: 'bar',
+                    type: 'line',
                     data: {
-                        labels: ['Libros', 'Autores', 'Géneros'],
+                        labels: monthlyData.labels,
                         datasets: [{
-                            label: 'Cantidad',
-                            data: [totalBooks, totalAuthors, totalGenres],
-                            backgroundColor: [
-                                colors.primary + '80',
-                                colors.secondary + '80',
-                                colors.tertiary + '80'
-                            ],
-                            borderColor: [
-                                colors.primary,
-                                colors.secondary,
-                                colors.tertiary
-                            ],
-                            borderWidth: 2,
-                            borderRadius: 8,
-                            borderSkipped: false,
+                            label: 'Libros Prestados',
+                            data: monthlyData.borrowed,
+                            borderColor: colors.primary,
+                            backgroundColor: colors.primary + '20',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4,
+                            pointBackgroundColor: colors.primary,
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 6
+                        }, {
+                            label: 'Reservas',
+                            data: monthlyData.reserved,
+                            borderColor: colors.success,
+                            backgroundColor: colors.success + '20',
+                            borderWidth: 3,
+                            fill: false,
+                            tension: 0.4,
+                            pointBackgroundColor: colors.success,
+                            pointBorderColor: '#ffffff',
+                            pointBorderWidth: 2,
+                            pointRadius: 6
                         }]
                     },
                     options: {
@@ -639,7 +641,15 @@
                         maintainAspectRatio: false,
                         plugins: {
                             legend: {
-                                display: false
+                                position: 'bottom',
+                                labels: {
+                                    padding: 20,
+                                    usePointStyle: true,
+                                    font: {
+                                        size: 14,
+                                        weight: '500'
+                                    }
+                                }
                             },
                             tooltip: {
                                 backgroundColor: 'rgba(0, 0, 0, 0.8)',
@@ -648,14 +658,8 @@
                                 borderColor: colors.primary,
                                 borderWidth: 1,
                                 cornerRadius: 8,
-                                callbacks: {
-                                    title: function(context) {
-                                        return `${context[0].label}`;
-                                    },
-                                    label: function(context) {
-                                        return `Cantidad: ${context.parsed.y}`;
-                                    }
-                                }
+                                mode: 'index',
+                                intersect: false
                             }
                         },
                         scales: {
@@ -688,9 +692,9 @@
                         }
                     }
                 });
-                console.log('Gráfico de comparación creado exitosamente');
+                console.log('Gráfico mensual creado exitosamente');
             } catch (error) {
-                console.error('Error al crear el gráfico de comparación:', error);
+                console.error('Error al crear el gráfico mensual:', error);
             }
         }
 
@@ -713,16 +717,12 @@
         // Inicializar cuando el DOM y Chart.js estén cargados
         document.addEventListener('DOMContentLoaded', async function() {
             console.log('DOM cargado, esperando Chart.js...');
-            console.log('Datos obtenidos:', { totalBooks, totalAuthors, totalGenres });
+            console.log('Datos del usuario:', { totalBooks, borrowedBooks, reservations });
 
             // Animar contadores de las tarjetas
-            const counters = document.querySelectorAll('.card-content h2');
-            counters.forEach((counter, index) => {
-                const target = parseInt(counter.textContent) || 0;
-                if (target > 0) {
-                    animateCounter(counter, target, 1200);
-                }
-            });
+            animateCounter(document.getElementById('totalBooksCard'), totalBooks, 1200);
+            animateCounter(document.getElementById('borrowedBooksCard'), borrowedBooks, 1200);
+            animateCounter(document.getElementById('reservationsCard'), reservations, 1200);
 
             try {
                 // Esperar a que Chart.js se cargue
@@ -731,16 +731,16 @@
 
                 // Crear gráficos después de que Chart.js esté disponible
                 setTimeout(() => {
-                    createDistributionChart();
-                    createComparisonChart();
+                    createActivityChart();
+                    createMonthlyChart();
                 }, 200);
 
             } catch (error) {
                 console.error('Error al cargar Chart.js:', error);
                 // Mostrar mensaje de error en lugar de los gráficos
-                document.getElementById('distributionChart').parentElement.innerHTML =
+                document.getElementById('activityChart').parentElement.innerHTML =
                     '<p style="text-align: center; color: #dc3545; padding: 50px;">Error al cargar los gráficos. Por favor, recarga la página.</p>';
-                document.getElementById('comparisonChart').parentElement.innerHTML =
+                document.getElementById('monthlyChart').parentElement.innerHTML =
                     '<p style="text-align: center; color: #dc3545; padding: 50px;">Error al cargar los gráficos. Por favor, recarga la página.</p>';
             }
         });

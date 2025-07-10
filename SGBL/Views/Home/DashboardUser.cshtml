@@ -388,7 +388,7 @@
         <div class="container">
             <h1 class="glass-title">
                 <i class="fas fa-user-circle"></i>
-                Mi Dashboard
+                Panel del el Usuario  <span>@(@User.Identity.Name)</span>
             </h1>
             <p class="glass-subtitle">Tu resumen personal de actividad en la librería digital</p>
         </div>
@@ -396,7 +396,7 @@
 
     <div class="dashboard-container">
         <div class="welcome-section">
-            <h2><i class="fas fa-heart" style="color: #007bff; margin-right: 10px;"></i>¡Hola! Bienvenido a tu espacio personal</h2>
+            <h2><i class="fas fa-heart" style="color: #007bff; margin-right: 10px;"></i>¡Hola! Bienvenido a tu espacio personal  <span>@(@User.Identity.Name)</span> </h2>
             <p>Aquí puedes ver tu actividad en la librería digital, tus libros prestados y el historial de reservas.</p>
         </div>
 
@@ -411,14 +411,14 @@
             <div class="card">
                 <i class="fas fa-bookmark card-icon"></i>
                 <div class="card-content">
-                    <h2 id="borrowedBooksCard">3</h2>
+                    <h2 id="borrowedBooksCard">0</h2>
                     <span>Libros Prestados</span>
                 </div>
             </div>
             <div class="card">
                 <i class="fas fa-clock card-icon"></i>
                 <div class="card-content">
-                    <h2 id="reservationsCard">8</h2>
+                    <h2 id="reservationsCard">0</h2>
                     <span>Reservas Realizadas</span>
                 </div>
             </div>
@@ -437,15 +437,15 @@
                     </div>
                     <div class="chart-stats">
                         <div class="chart-stat">
-                            <div class="chart-stat-number">3</div>
+                            <div class="chart-stat-number">0</div>
                             <div class="chart-stat-label">Prestados</div>
                         </div>
                         <div class="chart-stat">
-                            <div class="chart-stat-number">8</div>
+                            <div class="chart-stat-number">0</div>
                             <div class="chart-stat-label">Reservas</div>
                         </div>
                         <div class="chart-stat">
-                            <div class="chart-stat-number">125</div>
+                            <div class="chart-stat-number">43</div>
                             <div class="chart-stat-label">Disponibles</div>
                         </div>
                     </div>
@@ -484,9 +484,9 @@
 
     <script>
         // Datos simulados para el usuario (estos vendrían del backend)
-        const totalBooks = 125;
-        const borrowedBooks = 3;
-        const reservations = 8;
+        const totalBooks = 43;
+        const borrowedBooks = 0;
+        const reservations = 0;
 
         // Datos mensuales simulados
         const monthlyData = {

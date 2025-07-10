@@ -119,18 +119,17 @@
 
                                     <!-- Acciones -->
                                     <div class="mt-3 d-flex justify-content-between gap-2">
-                                        <button class="btn btn-success btn-sm w-50 rounded-pill shadow-sm">
-                                            <i class="bi bi-box-arrow-in-right me-1"></i> Préstamo
-                                        </button>
-                                        <button class="btn btn-warning btn-sm w-50 rounded-pill shadow-sm">
-                                            <i class="bi bi-bookmark-plus me-1"></i> Reserva
-                                        </button>
+                                         
                                           <form asp-controller="Home" asp-action="Reservar" method="post" class="w-50">
                                               <input type="hidden" name="id" value="@item.Id" />
-                                              <button type="submit" class="btn btn-warning btn-sm w-100 rounded-pill shadow-sm">
-                                              <i class="bi bi-bookmark-plus me-1"></i> Reserva
+                                                <button type="submit" class="btn btn-success btn-sm w-100 rounded-pill shadow-sm">
+                                                    <i class="bi bi-bookmark-plus me-1"></i> Préstamo
                                           </button>
                                        </form>
+
+                                            <button class="btn btn-success btn-warning w-50 rounded-pill shadow-sm">
+                                                <i class="bi bi-box-arrow-in-right me-1"></i> Reserva
+                                            </button>
                                     </div>
                                 </div>
 

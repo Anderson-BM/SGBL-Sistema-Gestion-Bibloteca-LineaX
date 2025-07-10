@@ -18,6 +18,7 @@ namespace SGBL.Infrastructure.Identity.Seeds
             await roleManager.CreateAsync(new IdentityRole(Roles.superAdmin.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Admi.ToString()));
             await roleManager.CreateAsync(new IdentityRole(Roles.Basic.ToString()));
+            await roleManager.CreateAsync(new IdentityRole(Roles.Biblotecario.ToString()));
 
             Console.WriteLine("✅ Roles creados exitosamente.");
 

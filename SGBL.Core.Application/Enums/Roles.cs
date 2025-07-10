@@ -10,6 +10,7 @@ namespace SGBL.Core.Application.Enums
     {
         superAdmin,
         Admi,
-        Basic
+        Basic,
+        Biblotecario
     }
 }
