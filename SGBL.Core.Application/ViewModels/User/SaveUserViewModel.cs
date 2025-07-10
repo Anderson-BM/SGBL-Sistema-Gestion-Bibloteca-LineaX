@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SGBL.Core.Application.ViewModels.User
 {
@@ -35,5 +36,11 @@ namespace SGBL.Core.Application.ViewModels.User
 
         public bool HasError { get; set; }
         public string? Error { get; set; }
+
+        // Nuevos campos para rol
+        [Required(ErrorMessage = "Debe seleccionar un rol")]
+        public string RoleId { get; set; }
+
+        public List<SelectListItem> Roles { get; set; } = new();
     }
 }

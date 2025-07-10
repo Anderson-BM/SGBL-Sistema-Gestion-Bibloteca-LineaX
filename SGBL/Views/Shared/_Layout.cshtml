@@ -345,6 +345,7 @@
                                         <i class="fas fa-chart-line"></i>Dashboard
                                     </a>
                                 </li>
+                             
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">
                                         <i class="fas fa-book"></i>Libros
@@ -366,6 +367,12 @@
                                     </a>
                                 </li>
                             }
+
+                                <li class="nav-item">
+                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Register">
+                                    <i class="fas fa-user-plus"></i> Registrar Nuevos Usuarios
+                                </a>
+                            </li>
 
 
                             if (isBiblotecario)

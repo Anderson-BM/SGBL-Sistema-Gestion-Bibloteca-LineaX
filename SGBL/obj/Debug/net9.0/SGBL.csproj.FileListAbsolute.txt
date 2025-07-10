@@ -661,3 +661,5 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\refint\SGBL.d
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\SGBL.genruntimeconfig.cache
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\obj\Debug\net9.0\ref\SGBL.dll
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll

@@ -24,4 +24,8 @@
     <ProjectReference Include="..\SGBL.Infrastructure.Shared\SGBL.Infrastructure.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Reserva\" />
+  </ItemGroup>
+
 </Project>
