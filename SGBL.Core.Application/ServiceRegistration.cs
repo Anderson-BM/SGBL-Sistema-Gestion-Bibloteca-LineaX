@@ -22,6 +22,7 @@ namespace SGBL.Core.Application
             services.AddTransient<IAuthorService, AuthorService>();
             services.AddTransient<IGeneroService, GeneroService>();
             services.AddTransient<IPrestamoService, PrestamoService>();
+            services.AddTransient<IReservasService, ReservasService>();
 
             #endregion
         }

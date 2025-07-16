@@ -1,41 +1,143 @@
 ﻿@using SGBL.Core.Application.ViewModels.Prestamo
 @using SGBL.Core.Domain.Enums
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-
 @model List<PrestamoViewModel>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Libro</th>
-            <th>Usuario</th>
-            <th>Estado</th>
-            <th>Solicitado</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var p in Model)
-        {
-            <tr>
-                <td>@p.TituloLibro</td>
-                <td>@p.NombreUsuario</td>
-                <td>@p.Estado</td>
-                <td>@p.FechaSolicitud.ToShortDateString()</td>
-                <td>
-                    @if (p.Estado == EstadoPrestamo.Pendiente)
-                    {
-                 <a asp-action="Aprobar" asp-route-id="@p.Id">Aprobar</a>           
-                 <a asp-action = "Rechazar" asp-route-id="@p.Id"> Rechaza </a >
-                                    }
-                    else if (p.Estado == EstadoPrestamo.Aprobado)
-                    {
-                        <a asp-action="Devolver" asp-route-id="@p.Id">Devolver</a>
-                    }
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@{
+    ViewData["Title"] = "Préstamos";
+}
+
+<style>
+    .prestamos-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .prestamos-table-wrapper {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .table thead {
+        position: sticky;
+        top: 0;
+        background-color: #f8f9fa;
+    }
+
+    .btn-aprobar {
+        background-color: #198754;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin-right: 5px;
+    }
+
+    .btn-rechazar {
+        background-color: #ffc107;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        margin-right: 5px;
+    }
+
+    .btn-devolver {
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+    }
+
+    .btn-aprobar:hover {
+        background-color: #157347;
+    }
+
+    .btn-rechazar:hover {
+        background-color: #e0a800;
+    }
+
+    .btn-devolver:hover {
+        background-color: #0b5ed7;
+    }
+
+    .badge-estado {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="prestamos-container">
+    <h2 class="mb-4 text-primary text-center">
+        <i class="bi bi-journal-check me-2"></i>Listado de Préstamos
+    </h2>
+
+    <div class="prestamos-table-wrapper">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Libro</th>
+                    <th>Usuario</th>
+                    <th>Estado</th>
+                    <th>Solicitado</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr>
+                        <td>@p.TituloLibro</td>
+                        <td>@p.NombreUsuario</td>
+                        <td>
+                            @switch (p.Estado)
+                            {
+                                case EstadoPrestamo.Pendiente:
+                                    <span class="badge bg-warning text-dark badge-estado">Pendiente</span>
+                                    break;
+                                case EstadoPrestamo.Aprobado:
+                                    <span class="badge bg-success badge-estado">Aprobado</span>
+                                    break;
+                                case EstadoPrestamo.Devuelto:
+                                    <span class="badge bg-secondary badge-estado">Devuelto</span>
+                                    break;
+                                case EstadoPrestamo.Rechazado:
+                                    <span class="badge bg-danger badge-estado">Rechazado</span>
+                                    break;
+                                default:
+                                    <span class="badge bg-light text-dark badge-estado">Desconocido</span>
+                                    break;
+                            }
+                        </td>
+                        <td>@p.FechaSolicitud.ToShortDateString()</td>
+                        <td class="text-center">
+                            @if (p.Estado == EstadoPrestamo.Pendiente)
+                            {
+                                <a asp-action="Aprobar" asp-route-id="@p.Id" class="btn-aprobar">
+                                    <i class="bi bi-check-circle me-1"></i>Aprobar
+                                </a>
+                                <a asp-action="Rechazar" asp-route-id="@p.Id" class="btn-rechazar">
+                                    <i class="bi bi-x-circle me-1"></i>Rechazar
+                                </a>
+                            }
+                            else if (p.Estado == EstadoPrestamo.Aprobado)
+                            {
+                                <a asp-action="Devolver" asp-route-id="@p.Id" class="btn-devolver">
+                                    <i class="bi bi-arrow-return-left me-1"></i>Devolver
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

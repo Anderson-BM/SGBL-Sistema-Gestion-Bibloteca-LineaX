@@ -296,7 +296,7 @@
                 <!-- Título izquierda -->
                 <span class="navbar-brand">
                     <i class="fas fa-book-open"></i>
-                    Sistema Gestión de Biblioteca
+                    BibloTech
                 </span>
 
                 <!-- Botón hamburguesa -->
@@ -324,6 +324,11 @@
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Prestamo" asp-action="Index">
                                         <i class="fas fa-calendar-check"></i>Prestamos y Devoluciones
+                                    </a>
+                                </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
+                                        <i class="fas fa-calendar-check"></i>Reservas
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -366,13 +371,17 @@
                                         <i class="fas fa-list"></i>Catálogo
                                     </a>
                                 </li>
-                            }
 
                                 <li class="nav-item">
                                 <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Register">
                                     <i class="fas fa-user-plus"></i> Registrar Nuevos Usuarios
                                 </a>
                             </li>
+
+                          
+                            }
+
+                              
 
 
                             if (isBiblotecario)
@@ -382,9 +391,10 @@
                                         <i class="fas fa-home"></i>Inicio
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="DashboardBiblotecario">
-                                        <i class="fas fa-chart-line"></i>Dashboard
+
+                                   <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
+                                        <i class="fas fa-calendar-check"></i>Administrar Reservas
                                     </a>
                                 </li>
                           

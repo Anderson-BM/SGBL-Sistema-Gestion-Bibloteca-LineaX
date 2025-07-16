@@ -182,6 +182,50 @@ namespace SGBL.Infrastructure.Persistence.Migrations
                     b.ToTable("Prestamos", (string)null);
                 });
 
+            modelBuilder.Entity("SGBL.Core.Domain.Entities.Reservas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaReserva")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LastModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("LibroId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Notificado")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UsuarioId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LibroId");
+
+                    b.ToTable("Reservas", (string)null);
+                });
+
             modelBuilder.Entity("SGBL.Core.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -264,6 +308,17 @@ namespace SGBL.Infrastructure.Persistence.Migrations
                     b.Navigation("Libro");
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("SGBL.Core.Domain.Entities.Reservas", b =>
+                {
+                    b.HasOne("SGBL.Core.Domain.Entities.Libro", "Libro")
+                        .WithMany()
+                        .HasForeignKey("LibroId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Libro");
                 });
 
             modelBuilder.Entity("SGBL.Core.Domain.Entities.Author", b =>

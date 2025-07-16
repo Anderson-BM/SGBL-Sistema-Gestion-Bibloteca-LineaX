@@ -4,6 +4,7 @@ using SGBL.Core.Application.ViewModels.Author;
 using SGBL.Core.Application.ViewModels.Genero;
 using SGBL.Core.Application.ViewModels.Libro;
 using SGBL.Core.Application.ViewModels.Prestamo;
+using SGBL.Core.Application.ViewModels.Reservas;
 using SGBL.Core.Application.ViewModels.User;
 using SGBL.Core.Domain.Entities;
 
@@ -115,6 +116,26 @@ namespace SGBL.Core.Application.Mappings
                 .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
                 .ForMember(x => x.Libro, opt => opt.Ignore())
                 .ForMember(x => x.Usuario, opt => opt.Ignore());
+            #endregion
+
+            #region ReservaProfile
+
+            CreateMap<Reservas, ReservasViewModel>()
+                .ForMember(x => x.TituloLibro, opt => opt.Ignore())
+                .ForMember(x => x.NombreUsuario, opt => opt.Ignore())
+                .ReverseMap()
+                .ForMember(x => x.Created, opt => opt.Ignore())
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+            CreateMap<Reservas, SaveReservasViewModel>()
+                .ReverseMap()
+                .ForMember(x => x.Created, opt => opt.Ignore())
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
             #endregion
 
         }

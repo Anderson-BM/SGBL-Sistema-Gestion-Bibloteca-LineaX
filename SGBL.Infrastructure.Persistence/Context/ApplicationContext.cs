@@ -15,7 +15,8 @@ namespace SGBL.Infrastructure.Persistence.Context
         public DbSet<Libro> Libro { get; set; } 
         public DbSet<Author> Autores { get; set; }
         public DbSet<Genero> Generos { get; set; }
-        public DbSet<Prestamo> Prestamos { get; set; } 
+        public DbSet<Prestamo> Prestamos { get; set; }
+        public DbSet<Reservas> Reservas { get; set; }   // termina de completarlo mas abajo
 
 
 
@@ -58,7 +59,10 @@ namespace SGBL.Infrastructure.Persistence.Context
                 .ToTable("Generos");
 
             modelBuilder.Entity<Prestamo>()
-                .ToTable("Prestamos"); 
+                .ToTable("Prestamos");
+
+            modelBuilder.Entity<Reservas>()
+            .ToTable("Reservas");
 
             #endregion
 
@@ -73,7 +77,10 @@ namespace SGBL.Infrastructure.Persistence.Context
                 .HasKey(g => g.Id);
 
             modelBuilder.Entity<Prestamo>()
-                .HasKey(p => p.Id); 
+                .HasKey(p => p.Id);
+
+            modelBuilder.Entity<Reservas>()
+            .HasKey(r => r.Id);
 
             #endregion
 
@@ -105,6 +112,21 @@ namespace SGBL.Infrastructure.Persistence.Context
                 .WithMany()
                 .HasForeignKey(p => p.UsuarioId)
                 .IsRequired(false); // ← esto indica que es opcional
+
+
+            // Relación Reserva -> Libro
+            modelBuilder.Entity<Reservas>()
+                .HasOne(r => r.Libro)
+                .WithMany()
+                .HasForeignKey(r => r.LibroId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            modelBuilder.Entity<Reservas>()
+           .Property(r => r.UsuarioId)
+           .IsRequired(); // o .IsRequired(false) si puede estar vacío
+
+
             #endregion
 
             #region "Property configurations"
@@ -139,6 +161,19 @@ namespace SGBL.Infrastructure.Persistence.Context
             modelBuilder.Entity<Prestamo>()
                 .Property(p => p.FechaSolicitud)
                 .IsRequired();
+
+            // Propiedades requeridas
+            modelBuilder.Entity<Reservas>()
+                .Property(r => r.Estado)
+                .IsRequired();
+
+            modelBuilder.Entity<Reservas>()
+                .Property(r => r.FechaReserva) // aqui estaba r.FechaSolicitud
+                .IsRequired();
+
+            modelBuilder.Entity<Reservas>()
+                .Property(r => r.UsuarioId)
+                .IsRequired(); // Si quieres que siempre se almacene un UsuarioId
             #endregion
 
 

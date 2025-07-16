@@ -6,6 +6,7 @@ using SGBL.Core.Application.Interfaces.Services;
 using SGBL.Core.Application.Services;
 using SGBL.Core.Application.ViewModels.Libro;
 using SGBL.Core.Application.ViewModels.Prestamo;
+using SGBL.Core.Application.ViewModels.Reservas;
 using SGBL.Core.Domain.Enums;
 using SGBL.Infrastructure.Identity.Entities;
 using SGBL.Models;
@@ -21,16 +22,18 @@ namespace SGBL.Controllers
         private readonly IGeneroService _generoService;
         private readonly IAuthorService _authorService;
         private readonly IPrestamoService _presetamoService;
+        private readonly IReservasService _reservasService;
         private readonly UserManager<ApplicationUser> _userManager;
 
 
 
-        public HomeController(ILibroService libroService, IGeneroService generoService, IAuthorService authorService, IPrestamoService prestamoService, UserManager<ApplicationUser> userManager)
+        public HomeController(ILibroService libroService, IGeneroService generoService, IAuthorService authorService, IPrestamoService prestamoService, UserManager<ApplicationUser> userManager, IReservasService reservasService)
         { 
             _libroService = libroService;
             _generoService = generoService;
             _authorService = authorService;
             _presetamoService = prestamoService;
+            _reservasService = reservasService;
             _userManager = userManager;
         }
 
@@ -135,5 +138,36 @@ namespace SGBL.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> Reservar(int id)
+        {
+            var userId = _userManager.GetUserId(User);
+
+            var puedeReservar = await _reservasService.PuedeReservar(id, userId);
+            if (!puedeReservar)
+            {
+                TempData["Error"] = "Ya tienes una reserva pendiente para este libro.";
+                return RedirectToAction("Index"); // O la vista que prefieras
+            }
+
+            var reserva = new SaveReservasViewModel
+            {
+                LibroId = id,
+                UsuarioId = userId,
+                FechaReserva = DateTime.Now,
+                Estado = "Pendiente"
+            };
+
+            await _reservasService.Add(reserva);
+            TempData["Success"] = "Reserva realizada con éxito.";
+            return RedirectToAction("Index", "Reservas");
+        }
+
+
+
     }
 }

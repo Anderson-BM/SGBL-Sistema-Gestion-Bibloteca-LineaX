@@ -1,0 +1,97 @@
+﻿@using SGBL.Core.Application.ViewModels.Reservas
+@model List<ReservasViewModel>
+
+@{
+    ViewData["Title"] = "Reservas";
+}
+
+<style>
+    .reservas-container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 30px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .reservas-table-wrapper {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .table thead {
+        position: sticky;
+        top: 0;
+        background-color: #f8f9fa;
+    }
+
+    .btn-eliminar {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+        .btn-eliminar:hover {
+            background-color: #bb2d3b;
+        }
+</style>
+
+<div class="reservas-container">
+    <h2 class="mb-4 text-primary text-center">
+        <i class="bi bi-bookmark-check-fill me-2"></i>Listado de Reservas
+    </h2>
+
+    @if (TempData["mensaje"] != null)
+    {
+        <div class="alert alert-success">@TempData["mensaje"]</div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <div class="reservas-table-wrapper">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Libro</th>
+                    <th>Usuario</th>
+                    <th>Fecha</th>
+                    <th>Estado</th>
+                    <th class="text-center">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var r in Model)
+                {
+                    <tr>
+                        <td>@r.LibroTitulo</td>
+                        <td>@r.UsuarioNombre</td>
+                        <td>@r.FechaReserva.ToShortDateString()</td>
+                        <td>
+                            <span class="badge bg-success">@r.Estado</span>
+                        </td>
+                        <td class="text-center">
+                            <form asp-controller="Reservas" asp-action="Delete" method="post" onsubmit="return confirm('¿Estás seguro de eliminar esta reserva?');">
+                                <input type="hidden" name="id" value="@r.Id" />
+                                <button type="submit" class="btn-eliminar">
+                                    <i class="bi bi-trash-fill me-1"></i>Eliminar Reserva
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
