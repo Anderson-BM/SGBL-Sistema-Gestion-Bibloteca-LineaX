@@ -1,0 +1,129 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Libros Recomendados</title>
+    <style>
+        /* === Estilos aislados: SOLO aplican dentro de .mango === */
+        .mango {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+            .mango .mango-titulo {
+                text-align: center;
+                color: #333;
+                margin: 0 0 10px 0;
+            }
+
+            .mango .mango-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            .mango .mango-card {
+                background: #ffffff;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                .mango .mango-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+                }
+
+                .mango .mango-card img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    display: block;
+                }
+
+            .mango .mango-body {
+                padding: 15px;
+            }
+
+            .mango .mango-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #222;
+                line-height: 1.2;
+                min-height: 44px; /* ayuda a alinear alturas entre cards */
+            }
+
+            .mango .mango-author {
+                font-size: 14px;
+                color: #777;
+                margin-bottom: 12px;
+            }
+
+            .mango .mango-btn {
+                background: #4CAF50;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                width: 100%;
+                font-weight: 600;
+                transition: background 0.25s ease, transform 0.1s ease;
+            }
+
+                .mango .mango-btn:hover {
+                    background: #45a049;
+                }
+
+                .mango .mango-btn:active {
+                    transform: scale(0.98);
+                }
+    </style>
+</head>
+<body>
+
+    <div class="mango">
+        <h1 class="mango-titulo">📚 Libros Recomendados</h1>
+
+        <div class="mango-grid" id="mangoLibrosContainer">
+            <!-- Aquí se insertarán las cards -->
+        </div>
+    </div>
+
+    <script>
+        // Datos de ejemplo (7 libros). Puedes reemplazarlos por los que vengan de tu backend.
+        const libros = [
+            { titulo: "Cien Años de Soledad", autor: "Gabriel García Márquez", imagen: "https://covers.openlibrary.org/b/id/9259251-L.jpg" },
+            { titulo: "El Principito", autor: "Antoine de Saint-Exupéry", imagen: "https://covers.openlibrary.org/b/id/10523350-L.jpg" },
+            { titulo: "Don Quijote de la Mancha", autor: "Miguel de Cervantes", imagen: "https://covers.openlibrary.org/b/id/8225261-L.jpg" },
+            { titulo: "1984", autor: "George Orwell", imagen: "https://covers.openlibrary.org/b/id/7222246-L.jpg" },
+            { titulo: "Harry Potter y la piedra filosofal", autor: "J.K. Rowling", imagen: "https://covers.openlibrary.org/b/id/7984916-L.jpg" },
+            { titulo: "Crónica de una muerte anunciada", autor: "Gabriel García Márquez", imagen: "https://covers.openlibrary.org/b/id/10424660-L.jpg" },
+            { titulo: "La Sombra del Viento", autor: "Carlos Ruiz Zafón", imagen: "https://covers.openlibrary.org/b/id/8231856-L.jpg" }
+        ];
+
+        const container = document.getElementById("mangoLibrosContainer");
+
+        libros.forEach(libro => {
+            const card = document.createElement("div");
+            card.classList.add("mango-card");
+            card.innerHTML = `
+                <img src="${libro.imagen}" alt="${libro.titulo}" loading="lazy">
+                <div class="mango-body">
+                    <div class="mango-title">${libro.titulo}</div>
+                    <div class="mango-author">${libro.autor}</div>
+                    <button class="mango-btn" onclick="alert('Has seleccionado: ${libro.titulo}')">Ver más</button>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>

@@ -3,14 +3,13 @@
 @using SGBL.Core.Application.Helpers;
 @using SGBL.Core.Application.ViewModels.User
 @inject IHttpContextAccessor httpContextAccessor
-@{  
+@{
     //  ASIGNACIONES DE ROLES NECESARIOS
     var User = httpContextAccessor.HttpContext.Session.Get<AuthenticationResponse>("user");
     var isAdmi = User != null ? User.Roles.Any(r => r == "Admi") : false;
     var isBasic = User != null ? User.Roles.Any(r => r == "Basic") : false;
     var isBiblotecario = User != null ? User.Roles.Any(r => r == "Biblotecario") : false;
 }
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,107 +21,232 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SGBL.styles.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
     <style>
-        .navbar-library {
+        /* Estilos para el sidebar vertical */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 280px;
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            padding: 1rem 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            border-bottom: 3px solid #2563eb;
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: white !important;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-            .navbar-brand i {
-                margin-right: 0.5rem;
-                color: #ffd700;
-            }
-
-        .nav-link {
-            color: white !important;
-            font-weight: 500;
-            padding: 0.75rem 1rem !important;
-            border-radius: 8px;
-            margin: 0 0.2rem;
+            box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+            border-right: 3px solid #2563eb;
+            z-index: 1000;
+            overflow-y: auto;
             transition: all 0.3s ease;
         }
 
-            .nav-link:hover {
-                background: rgba(255,255,255,0.2);
-                transform: translateY(-2px);
-                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            }
-
-            .nav-link i {
-                margin-right: 0.5rem;
-                width: 20px;
-                text-align: center;
-            }
-
-        .user-dropdown {
-            background: rgba(255,255,255,0.15);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 25px;
-            padding: 0.5rem 1rem;
-            backdrop-filter: blur(10px);
+        /* Perfil de usuario en la parte superior del sidebar */
+        .user-profile {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 1rem;
         }
 
-            .user-dropdown:hover {
-                background: rgba(255,255,255,0.25);
-            }
-
-        .user-avatar {
-            width: 32px;
-            height: 32px;
+        .user-profile-avatar {
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             background: linear-gradient(45deg, #ffd700, #ffed4e);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 0.5rem;
+            margin: 0 auto 1rem auto;
             color: #333;
             font-weight: bold;
+            font-size: 2rem;
+            border: 4px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
-        .btn-auth {
+        .user-profile-name {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .user-profile-role {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        /* Título de la aplicación */
+        .sidebar-brand {
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-brand-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+
+            .sidebar-brand-text i {
+                margin-right: 0.5rem;
+                color: #ffd700;
+            }
+
+        /* Navegación del sidebar */
+        .sidebar-nav {
+            padding: 0 1rem;
+            list-style: none;
+            margin: 0;
+        }
+
+        .sidebar-nav-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-nav-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: white !important;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .sidebar-nav-link:hover {
+                background: rgba(255,255,255,0.2);
+                transform: translateX(5px);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                color: white !important;
+            }
+
+            .sidebar-nav-link i {
+                width: 20px;
+                text-align: center;
+                margin-right: 1rem;
+                font-size: 1.1rem;
+            }
+
+        /* Botones de autenticación */
+        .sidebar-auth-buttons {
+            padding: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: auto;
+        }
+
+        .btn-sidebar-auth {
+            width: 100%;
             background: linear-gradient(45deg, #ffd700, #ffed4e);
             border: none;
             color: #333;
             font-weight: 600;
-            padding: 0.5rem 1.5rem;
+            padding: 0.8rem;
             border-radius: 25px;
-            margin: 0 0.3rem;
+            margin-bottom: 0.5rem;
             transition: all 0.3s ease;
         }
 
-            .btn-auth:hover {
+            .btn-sidebar-auth:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 6px 20px rgba(255,215,0,0.4);
                 color: #333;
             }
-/*         media (max-width: 992px) {
-            .navbar-nav
 
-        {
-            margin-top: 1rem;
-            padding-top: 1rem;
+        /* Dropdown del usuario logueado */
+        .user-dropdown-sidebar {
+            padding: 1rem;
             border-top: 1px solid rgba(255,255,255,0.2);
         }
 
-        } */
-    </style>
+        .user-dropdown-toggle {
+            width: 100%;
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            padding: 0.8rem 1rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
 
+            .user-dropdown-toggle:hover {
+                background: rgba(255,255,255,0.25);
+            }
 
+        .dropdown-menu-sidebar {
+            width: 100%;
+            margin-top: 0.5rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
 
+        /* Layout principal */
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    <style>
+        .content-wrapper {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        /* Toggle button para móviles */
+        .sidebar-toggle {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1001;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            color: #333;
+            font-size: 1.2rem;
+            display: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+       
+
+        /* Overlay para móviles */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            display: none;
+        }
+
+            .sidebar-overlay.show {
+                display: block;
+            }
+
+        /* Footer styles (mantener los existentes) */
         .footer-library {
             background: linear-gradient(135deg, #4a6fa5 0%, #5a7fb8 100%);
             color: white;
@@ -226,22 +350,7 @@
             animation: pulse 2s infinite;
         }
 
-      /*   keyframes pulse {
-            0%
-
-        {
-            opacity: 1;
-        }
-
-        50% {
-            opacity: 0.7;
-        }
-
-        100% {
-            opacity: 1;
-        }
-
-        } */
+       
 
         .footer-stats {
             background: rgba(255, 255, 255, 0.05);
@@ -271,276 +380,323 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
-       /*  media (max-width: 768px) {
-            .footer-title
-
-        {
-            font-size: 1.2rem;
-        }
-
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            margin: 0 0.3rem;
-        }
-
-        } */
     </style>
 
+    <!-- Botón toggle para móviles -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
 
+    <!-- Overlay para móviles -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-library">
-            <div class="container-fluid">
-                <!-- Título izquierda -->
-                <span class="navbar-brand">
-                    <i class="fas fa-book-open"></i>
-                    BibloTech
-                </span>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <!-- Título de la aplicación -->
+        <div class="sidebar-brand">
+            <h4 class="sidebar-brand-text">
+                <i class="fas fa-book-open"></i>
+                BibloTech
+            </h4>
+        </div>
 
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        @if (User != null)
+        {
+            <!-- Perfil de usuario -->
+            <div class="user-profile">
+                <div class="user-profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-profile-name">@(User.UserName)</div>
+                <div class="user-profile-role">
+                    @if (isAdmi)
+                    {
+                        <span>Administrador</span>
+                    }
+                    @if (isBasic)
+                    {
+                        <span>Usuario Básico</span>
+                    }
+                    @if (isBiblotecario)
+                    {
+                        <span>Bibliotecario</span>
+                    }
+                </div>
+            </div>
+        }
 
-                <!-- Links a la derecha -->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        @if (User != null)
-                        {
-                            if (isBasic)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                                        <i class="fas fa-home"></i>Inicio
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="DashboardUser">
-                                        <i class="fas fa-tachometer-alt"></i>Dashboard
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Prestamo" asp-action="Index">
-                                        <i class="fas fa-calendar-check"></i>Prestamos y Devoluciones
-                                    </a>
-                                </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
-                                        <i class="fas fa-calendar-check"></i>Reservas
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
-                                        <i class="fas fa-book"></i>Ver Catálogo
-                                    </a>
-                                </li>
-                            }
+        <!-- Navegación principal -->
+        <ul class="sidebar-nav">
+            @if (User != null)
+            {
+                if (isBasic)
+                {
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="fas fa-home"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Home" asp-action="DashboardUser">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Prestamo" asp-action="Index">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Préstamos y Devoluciones</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Reservas</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Recomendaciones" asp-action="Index">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>Recomendaciones</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                            <i class="fas fa-book"></i>
+                            <span>Ver Catálogo</span>
+                        </a>
+                    </li>
+                }
 
-                            if (isAdmi)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                                        <i class="fas fa-home"></i>Inicio
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">
-                                        <i class="fas fa-chart-line"></i>Dashboard
-                                    </a>
-                                </li>
-                             
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">
-                                        <i class="fas fa-book"></i>Libros
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Genero" asp-action="Index">
-                                        <i class="fas fa-tags"></i>Géneros
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Author" asp-action="Index">
-                                        <i class="fas fa-user-edit"></i>Autores
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
-                                        <i class="fas fa-list"></i>Catálogo
-                                    </a>
-                                </li>
+                if (isAdmi)
+                {
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="fas fa-home"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Home" asp-action="Dashboard">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Libro" asp-action="Index">
+                            <i class="fas fa-book"></i>
+                            <span>Libros</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Genero" asp-action="Index">
+                            <i class="fas fa-tags"></i>
+                            <span>Géneros</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Author" asp-action="Index">
+                            <i class="fas fa-user-edit"></i>
+                            <span>Autores</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                            <i class="fas fa-list"></i>
+                            <span>Catálogo</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="User" asp-action="Register">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Registrar Usuarios</span>
+                        </a>
+                    </li>
+                }
 
-                                <li class="nav-item">
-                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Register">
-                                    <i class="fas fa-user-plus"></i> Registrar Nuevos Usuarios
-                                </a>
-                            </li>
+                if (isBiblotecario)
+                {
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <i class="fas fa-home"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Administrar Reservas</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                        <a class="sidebar-nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                            <i class="fas fa-list"></i>
+                            <span>Administrar Catálogo</span>
+                        </a>
+                    </li>
+                }
+            }
+            else
+            {
+                <li class="sidebar-nav-item">
+                    <a class="sidebar-nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
+                        <i class="fas fa-book"></i>
+                        <span>Catálogo</span>
+                    </a>
+                </li>
+            }
+        </ul>
 
-                          
-                            }
-
-                              
-
-
-                            if (isBiblotecario)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                                        <i class="fas fa-home"></i>Inicio
-                                    </a>
-                                </li>
-
-                                   <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Reservas" asp-action="Index">
-                                        <i class="fas fa-calendar-check"></i>Administrar Reservas
-                                    </a>
-                                </li>
-                          
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
-                                        <i class="fas fa-list"></i>Administrar Catálogo
-                                    </a>
-                                </li>
-                            }
-
-                            <!-- Usuario logueado con dropdown -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link user-dropdown d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                                    <div class="user-avatar">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                    <span>@(User.UserName)</span>
-                                    <i class="fas fa-chevron-down ms-2"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle me-2"></i>Mi Perfil</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Configuración</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="User" asp-action="LogOut"><i class="fas fa-sign-out-alt me-2"></i>Cerrar sesión</a></li>
-                                </ul>
-                            </li>
-                        }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Index">
-                                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-auth" asp-area="" asp-controller="User" asp-action="Register">
-                                    <i class="fas fa-user-plus"></i> Regístrate
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Index">
-                                    <i class="fas fa-book"></i>Catálogo
-                                </a>
-                            </li>
-                        }
+        @if (User != null)
+        {
+            <!-- Dropdown del usuario logueado -->
+            <div class="user-dropdown-sidebar">
+                <div class="dropdown">
+                    <button class="user-dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <span>Opciones de perfil</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-sidebar">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle me-2"></i>Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Configuración</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" asp-area="" asp-controller="User" asp-action="LogOut"><i class="fas fa-sign-out-alt me-2"></i>Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        }
+        else
+        {
+            <!-- Botones de autenticación -->
+            <div class="sidebar-auth-buttons">
+                <a class="btn btn-sidebar-auth" asp-area="" asp-controller="User" asp-action="Index">
+                    <i class="fas fa-sign-in-alt me-2"></i>Iniciar Sesión
+                </a>
+                <a class="btn btn-sidebar-auth" asp-area="" asp-controller="User" asp-action="Register">
+                    <i class="fas fa-user-plus me-2"></i>Regístrate
+                </a>
+            </div>
+        }
+    </nav>
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <div class="content-wrapper">
             @RenderBody()
-        </main>
+        </div>
+
+       @*  <!-- Footer -->
+        <footer class="footer-library">
+            <div class="container py-5 footer-content">
+                <!-- Estadísticas destacadas -->
+                <div class="row footer-stats">
+                    <div class="col-4 stat-item">
+                        <span class="stat-number pulse-effect">15,000+</span>
+                        <span class="stat-label">Libros</span>
+                    </div>
+                    <div class="col-4 stat-item">
+                        <span class="stat-number pulse-effect">2,500+</span>
+                        <span class="stat-label">Usuarios</span>
+                    </div>
+                    <div class="col-4 stat-item">
+                        <span class="stat-number pulse-effect">24/7</span>
+                        <span class="stat-label">Acceso</span>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <!-- Información principal -->
+                    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                        <h5 class="footer-title">
+                            <i class="fas fa-microchip tech-icon"></i>
+                            SGBL - Sistema de Gestión de Bibliotecas
+                        </h5>
+                        <p class="footer-subtitle">
+                            <i class="fas fa-rocket tech-icon"></i>
+                            Tu acceso al conocimiento, más fácil que nunca.
+                        </p>
+                        <p class="footer-copyright">
+                            <i class="fas fa-code tech-icon"></i>
+                            &copy; 2025 - Todos los derechos reservados.
+                        </p>
+                    </div>
+
+                    <!-- Enlaces útiles -->
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="mb-3">
+                            <a asp-area="" asp-controller="Home" asp-action="Privacy" class="footer-link">
+                                <i class="fas fa-shield-alt me-2"></i>Política de Privacidad
+                            </a>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-file-contract me-2"></i>Términos de uso
+                            </a>
+                            <a href="#" class="footer-link">
+                                <i class="fas fa-envelope me-2"></i>Contacto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Línea separadora -->
+                <hr class="footer-divider">
+
+                <!-- Redes sociales y información técnica -->
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <small class="text-muted">
+                            <i class="fas fa-server tech-icon"></i>
+                            Desarrollado con ASP.NET Core |
+                            <i class="fas fa-database tech-icon"></i>
+                            Powered by Modern Technology
+                        </small>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer> *@
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        // Función para toggle del sidebar en móviles
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+
+            sidebar.classList.toggle('show');
+            overlay.classList.toggle('show');
+        }
+
+        // Cerrar sidebar al hacer clic en un enlace (móviles)
+        document.querySelectorAll('.sidebar-nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 992) {
+                    toggleSidebar();
+                }
+            });
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-
-
-<footer class="footer-library">
-    <div class="container py-5 footer-content">
-        <!-- Estadísticas destacadas -->
-        <div class="row footer-stats">
-            <div class="col-4 stat-item">
-                <span class="stat-number pulse-effect">15,000+</span>
-                <span class="stat-label">Libros</span>
-            </div>
-            <div class="col-4 stat-item">
-                <span class="stat-number pulse-effect">2,500+</span>
-                <span class="stat-label">Usuarios</span>
-            </div>
-            <div class="col-4 stat-item">
-                <span class="stat-number pulse-effect">24/7</span>
-                <span class="stat-label">Acceso</span>
-            </div>
-        </div>
-
-        <div class="row align-items-center">
-            <!-- Información principal -->
-            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                <h5 class="footer-title">
-                    <i class="fas fa-microchip tech-icon"></i>
-                    SGBL - Sistema de Gestión de Bibliotecas
-                </h5>
-                <p class="footer-subtitle">
-                    <i class="fas fa-rocket tech-icon"></i>
-                    Tu acceso al conocimiento, más fácil que nunca.
-                </p>
-                <p class="footer-copyright">
-                    <i class="fas fa-code tech-icon"></i>
-                    &copy; 2025 - Todos los derechos reservados.
-                </p>
-            </div>
-
-            <!-- Enlaces útiles -->
-            <div class="col-md-6 text-center text-md-end">
-                <div class="mb-3">
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy" class="footer-link">
-                        <i class="fas fa-shield-alt me-2"></i>Política de Privacidad
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-file-contract me-2"></i>Términos de uso
-                    </a>
-                    <a href="#" class="footer-link">
-                        <i class="fas fa-envelope me-2"></i>Contacto
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Línea separadora -->
-        <hr class="footer-divider">
-
-        <!-- Redes sociales y información técnica -->
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <small class="text-muted">
-                    <i class="fas fa-server tech-icon"></i>
-                    Desarrollado con ASP.NET Core |
-                    <i class="fas fa-database tech-icon"></i>
-                    Powered by Modern Technology
-                </small>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <a href="#" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</footer>
 </html>
