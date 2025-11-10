@@ -10,3 +10,15 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\S
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\refint\SGBL.Core.Domain.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Core.Domain\obj\Debug\net9.0\ref\SGBL.Core.Domain.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\bin\Debug\net9.0\SGBL.Core.Domain.deps.json
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\bin\Debug\net9.0\SGBL.Core.Domain.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\bin\Debug\net9.0\SGBL.Core.Domain.pdb
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.AssemblyInfo.cs
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.sourcelink.json
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\refint\SGBL.Core.Domain.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\SGBL.Core.Domain.pdb
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Core.Domain\obj\Debug\net9.0\ref\SGBL.Core.Domain.dll

@@ -11,3 +11,16 @@ C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debu
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\refint\SGBL.Infrastructure.Shared.dll
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.pdb
 C:\Users\hp\OneDrive\Escritorio\pruebas\SGBL\SGBL.Infrastructure.Shared\obj\Debug\net9.0\ref\SGBL.Infrastructure.Shared.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\bin\Debug\net9.0\SGBL.Infrastructure.Shared.deps.json
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\bin\Debug\net9.0\SGBL.Infrastructure.Shared.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\bin\Debug\net9.0\SGBL.Infrastructure.Shared.pdb
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.csproj.AssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.AssemblyInfoInputs.cache
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.AssemblyInfo.cs
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.sourcelink.json
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\refint\SGBL.Infrastructure.Shared.dll
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\SGBL.Infrastructure.Shared.pdb
+C:\Users\Administrador\Documents\GitHub\SGBL-Sistema-Gestion-Bibloteca-LineaX\SGBL.Infrastructure.Shared\obj\Debug\net9.0\ref\SGBL.Infrastructure.Shared.dll
