@@ -1,73 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\recomendaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\recomendaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\recomendaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\recomendacionescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\controllers\\recomendacionescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\recomendacionescontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\prestamocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.application\\services\\recomendacionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.core.application\\services\\recomendacionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{542F5E8A-BBA0-4EA0-BA8F-F6B406004C15}|SGBL.Core.Application\\SGBL.Core.Application.csproj|solutionrelative:sgbl.core.application\\services\\recomendacionesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.core.domain\\entities\\historiallectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.core.domain\\entities\\historiallectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D054BC12-DEB6-4BFC-A57F-37238986010E}|SGBL.Core.Domain\\SGBL.Core.Domain.csproj|solutionrelative:sgbl.core.domain\\entities\\historiallectura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\context\\identitycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\context\\identitycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\context\\identitycontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl.infrastructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\hp\\onedrive\\escritorio\\pruebas\\sgbl\\sgbl\\views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\reservas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -78,158 +82,165 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-10T20:52:01.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "SGBL\\Views\\User\\Index.cshtml",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAAJYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-13T04:00:27.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "SGBL\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAD8CAAAAAAAAAAAAAEwCAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T02:38:16.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReservasController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\ReservasController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\ReservasController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\ReservasController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\ReservasController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwB0AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:18:19.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PrestamoController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\PrestamoController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\PrestamoController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\PrestamoController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\PrestamoController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAA0wCQAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:18:15.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T02:38:16.422Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GeneroController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\GeneroController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\GeneroController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\GeneroController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\GeneroController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAqwDkAAABHAAAAAAAAAA==",
+              "Title": "ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\ReservasController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\ReservasController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\ReservasController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwB0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:17:48.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T02:18:19.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PrestamoController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\PrestamoController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\PrestamoController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\PrestamoController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\PrestamoController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA0wCQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T02:18:15.333Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "LibroController.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\LibroController.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\LibroController.cs",
-              "RelativeToolTip": "SGBL\\Controllers\\LibroController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAA+wEUAAAAAAAAAAAAAAA==",
+              "Title": "GeneroController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\GeneroController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\GeneroController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\GeneroController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\GeneroController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAqwDkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T02:15:38.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Recomendaciones\\Index.cshtml",
-              "RelativeDocumentMoniker": "SGBL\\Views\\Recomendaciones\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Recomendaciones\\Index.cshtml",
-              "RelativeToolTip": "SGBL\\Views\\Recomendaciones\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-12T03:54:54.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecomendacionesController .cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RecomendacionesController .cs",
-              "RelativeDocumentMoniker": "SGBL\\Controllers\\RecomendacionesController .cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Controllers\\RecomendacionesController .cs",
-              "RelativeToolTip": "SGBL\\Controllers\\RecomendacionesController .cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T03:50:22.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T02:17:48.351Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "RecomendacionesService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\RecomendacionesService.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\RecomendacionesService.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\Services\\RecomendacionesService.cs",
-              "RelativeToolTip": "SGBL.Core.Application\\Services\\RecomendacionesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Title": "LibroController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\LibroController.cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\LibroController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\LibroController.cs",
+              "RelativeToolTip": "SGBL\\Controllers\\LibroController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAA+wEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T03:40:44.154Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T02:15:38.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Recomendaciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "SGBL\\Views\\Recomendaciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Recomendaciones\\Index.cshtml",
+              "RelativeToolTip": "SGBL\\Views\\Recomendaciones\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-12T03:54:54.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RecomendacionesController .cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\RecomendacionesController .cs",
+              "RelativeDocumentMoniker": "SGBL\\Controllers\\RecomendacionesController .cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\RecomendacionesController .cs",
+              "RelativeToolTip": "SGBL\\Controllers\\RecomendacionesController .cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T03:50:22.954Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "HistorialLectura.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
-              "RelativeDocumentMoniker": "SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
-              "RelativeToolTip": "SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Title": "RecomendacionesService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\Services\\RecomendacionesService.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\RecomendacionesService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\Services\\RecomendacionesService.cs",
+              "RelativeToolTip": "SGBL.Core.Application\\Services\\RecomendacionesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T02:58:37.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T03:40:44.154Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "RelativeToolTip": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Title": "HistorialLectura.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
+              "RelativeDocumentMoniker": "SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
+              "RelativeToolTip": "SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T01:49:13.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-10T02:58:37.832Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "RelativeToolTip": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-10T01:49:13.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -237,11 +248,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "DefaultBasicUser.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Seeds\\DefaultBasicUser.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -249,11 +260,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Entities\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -261,11 +272,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IdentityContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Context\\IdentityContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -273,11 +284,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IdentityContext.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Context\\IdentityContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -285,11 +296,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Reservas\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Reservas\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\Reservas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL\\Views\\Reservas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Reservas\\Index.cshtml",
               "RelativeToolTip": "SGBL\\Views\\Reservas\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
