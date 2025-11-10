@@ -98,8 +98,7 @@
               "RelativeToolTip": "SGBL\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAAE8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T20:52:01.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:52:01.158Z"
             },
             {
               "$type": "Document",
@@ -111,8 +110,7 @@
               "RelativeToolTip": "SGBL\\Views\\User\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T04:00:27.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T04:00:27.935Z"
             },
             {
               "$type": "Document",
@@ -242,7 +240,7 @@
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAApwKgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAlwFMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-10T01:49:03.332Z",
               "EditorCaption": ""

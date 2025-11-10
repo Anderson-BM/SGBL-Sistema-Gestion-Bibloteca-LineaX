@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A8F6D4EB-BB67-4CC8-8899-8476F49F1838}|SGBL\\SGBL.csproj|solutionrelative:sgbl\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -51,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|c:\\users\\administrador\\documents\\github\\sgbl-sistema-gestion-bibloteca-lineax\\sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0115B49C-5BAF-4316-9CD9-CB530163A8D7}|SGBL.Infrastructure.Identity\\SGBL.Infrastructure.Identity.csproj|solutionrelative:sgbl.infrastructure.identity\\seeds\\defaultbasicuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,20 +90,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "SGBL\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAE8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-10T20:52:01.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T20:52:01.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\User\\Index.cshtml",
@@ -111,12 +110,11 @@
               "RelativeToolTip": "SGBL\\Views\\User\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T04:00:27.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T04:00:27.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\Shared\\_Layout.cshtml",
@@ -128,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ReservasController.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\ReservasController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\ReservasController.cs",
@@ -140,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PrestamoController.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\PrestamoController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\PrestamoController.cs",
@@ -152,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GeneroController.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\GeneroController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\GeneroController.cs",
@@ -164,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LibroController.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\LibroController.cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\LibroController.cs",
@@ -176,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Views\\Recomendaciones\\Index.cshtml",
               "RelativeDocumentMoniker": "SGBL\\Views\\Recomendaciones\\Index.cshtml",
@@ -188,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RecomendacionesController .cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL\\Controllers\\RecomendacionesController .cs",
               "RelativeDocumentMoniker": "SGBL\\Controllers\\RecomendacionesController .cs",
@@ -200,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RecomendacionesService.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\Services\\RecomendacionesService.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Application\\Services\\RecomendacionesService.cs",
@@ -212,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "HistorialLectura.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
               "RelativeDocumentMoniker": "SGBL.Core.Domain\\Entities\\HistorialLectura.cs",
@@ -224,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\ServiceRegistration.cs",
@@ -236,15 +234,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "ToolTip": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
               "RelativeToolTip": "SGBL.Infrastructure.Identity\\Services\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAApwKgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-10T01:49:03.332Z"
+              "WhenOpened": "2025-08-10T01:49:03.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

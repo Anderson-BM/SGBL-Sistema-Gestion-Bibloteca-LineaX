@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGBL.Core.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af5c4b840cfe5228ae1578ed836adf4960589235")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd64efa58efd2bee29ae5b47bbfc2bff94055708")]
 [assembly: System.Reflection.AssemblyProductAttribute("SGBL.Core.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGBL.Core.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
