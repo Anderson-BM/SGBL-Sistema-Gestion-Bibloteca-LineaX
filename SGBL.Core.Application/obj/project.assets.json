@@ -4845,23 +4845,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\SGBL.Core.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\SGBL.Core.Application.csproj",
       "projectName": "SGBL.Core.Application",
-      "projectPath": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\SGBL.Core.Application.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Application\\obj\\",
+      "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\SGBL.Core.Application.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4876,8 +4876,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\SGBL.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\hp\\OneDrive\\Escritorio\\pruebas\\SGBL\\SGBL.Core.Domain\\SGBL.Core.Domain.csproj"
+            "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Domain\\SGBL.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\Administrador\\Documents\\GitHub\\SGBL-Sistema-Gestion-Bibloteca-LineaX\\SGBL.Core.Domain\\SGBL.Core.Domain.csproj"
             }
           }
         }
@@ -4947,7 +4947,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SGBL.Infrastructure.Identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e56800d4f1999911f0209e7c860008f86397e418")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66b19173507417b88ef10fa5b6c3e2248fabcfa6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SGBL.Infrastructure.Identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SGBL.Infrastructure.Identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
